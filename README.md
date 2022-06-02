@@ -6,7 +6,7 @@ Es un proyecto orientado a todas las edades, para disfrutar en familia y amigos.
 #Descripcion de los integrantes del equipo.
 Santos Gonzalez Palau -- 26 anos, nacido en Argentina,; viviendo actualmente en Florida y estudiante de Ingenieria Ambiental. Amante del deporte y de los grandes eventos.
 
-Angel Angulo -- 
+Angel Angulo -- 37 anos, nacido en Venezuela,; viviendo actualmente en Argentina. Trabajo para la empresa Johnson Controls. Fanatico del Futbol club Barcelona. 
 
 #Referentes del mercado
 -eventbrite . El principal referente. Orientado a la musica y entretinimiento. Muy simple y accesible para cualquiera.
