@@ -7,9 +7,11 @@ Es un proyecto orientado a todas las edades, para disfrutar en familia y amigos.
 
 <h3>Descripcion de los integrantes del equipo.</h3>
 <h4>Santos Gonzalez Palau</h4> 
+<img src='images-integrantes\perfil-santos.jpg'>
 <p>26 anos, nacido en Argentina,; viviendo actualmente en Florida y estudiante de Ingenieria Ambiental. Amante del deporte y de los grandes     eventos.</p>
 
-<h4>Angel Angulo </h4> 
+<h4>Angel Angulo </h4>
+<img src='images-integrantes\Imagen_Angel_Angulo.jpg'>
 <p> 37 anos, nacido en Venezuela,; viviendo actualmente en Argentina. Trabajo para la empresa Johnson Controls. Fanatico del Futbol club Barcelona. </p>
 
 <h3>Trello</h3>
