@@ -1,4 +1,4 @@
-<img src='sprint1\KingKet1.png' width=50% >
+<img src='sprint2\KingKet1.png' width=50% >
 <h1>KingKet</h1>
 
 <p>El proyecto KingKet esta orientado a la venta de tickets para diferentes rubros, iniciando en deporte con la idea de expandir hacia eventos musicales, teatro y otros eventos relacionados al arte y entretimiento.</p>
