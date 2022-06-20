@@ -22,3 +22,6 @@ app.get('/productDetail',(req,res) => {
 });
  
 //falta levantar servidor//
+app.listen(4000 , () => {
+    console.log("servidor levantado en puerto 4000")
+})
