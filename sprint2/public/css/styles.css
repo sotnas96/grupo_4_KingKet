@@ -113,11 +113,10 @@ button.register{
 /* estilando carrito */
 ul.listaUpcoming{
     margin: 10px;
-    color: #F8D12F;
 }
 .articuloCarrito{
     width: 100%;
-    border: 1px #F8D12F solid;
+    border: 1px white solid;
     margin: 5px;
     padding: 5px;
 }
@@ -152,8 +151,15 @@ h3.titularesPAST{
     margin: 5px;
 }
 div button.uPcomingPast:hover h3{ 
-    border: #F8D12F 1px solid;
+    border: white 1px solid;
     border-radius: 5px;
 
 }
+li:hover {
+    color: #F8D12F;
+}
 
+ul.listaUpcoming li:hover article.articuloCarrito {
+    border: #F8D12F 1px solid;
+    color: #F8D12F;
+}
