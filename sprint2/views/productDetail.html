@@ -19,33 +19,32 @@ rel="stylesheet" />
         </div>
     </header>
     <main class="registro">
-       
         <div>
-            <h3 class="h3Register">LOGIN</h3>
-            
+            <h3 class="h3Register">REGISTRATE</h3>
             <form action="/" method="post">
-                
-                
-                <div class="registro">
-                    <input type="text" name="nombre de usuario" id="nombre de usuario" placeholder="Nombre de usuario" required minlength="3" maxlength="15" class="Control-input-login">
+                <label for="nombre">Nombre</label>
+                <div>
+                    <input type="text" name="nombre" >
                 </div>
-
-                <div class="registro">
-                    <input type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña" required minlength="8" class="Control-input-login">
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" name="email" >
+                </div>
+                <label for="contra">Password</label>
+                <div>
+                    <input type="password" name="contra" >
+                </div>
+                <label for="reContra">Confirm password</label>
+                <div>
+                    <input type="password" name="reContra" id="" >
                 </div>
                 <div>
-                    <label for="recordar" >Recordarme</label>
-                    <input type="checkbox" name="recordar" id="recordar" value="recordarme">
+                    <button type="submit" class="register">Registrarse</button>
                 </div>
-        
-               <button type="submit" class="register"><strong>Ingresar a KingKet</strong></button>
-
-
             </form>
 
         </div>
     </main>
-
     <footer class="pie">
         <div class="textoFooter">
             <h4><a href="">Quienes somos</a></h4>
