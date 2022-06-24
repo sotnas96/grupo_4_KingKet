@@ -4,46 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KINGket</title>
+    <title>productDetail-KingKet</title>
     <!--Font awesome , Iconos-->    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
-<body class="bodyRegister">
+<body>
     <header>
         <div class="mainHeader">
             <img src="/static/images/kingketLogo.jpg" class="logo">
 
-            
+            <div class="burgerMenu">
+                <button class="lupa">
+                    <i class="fas fa-search search"></i>
+                </button>
+                <button class="menuHambur">
+                    <i class="fas fa-bars burger"></i>
+                </button>
+            </div>
         </div>
     </header>
-    <main class="registro">
-        <div>
-            <h3 class="h3Register">REGISTRATE</h3>
-            <form action="/" method="post">
-                <label for="nombre">Nombre</label>
-                <div>
-                    <input type="text" name="nombre" >
-                </div>
-                <label for="email">Email</label>
-                <div>
-                    <input type="email" name="email" >
-                </div>
-                <label for="contra">Password</label>
-                <div>
-                    <input type="password" name="contra" >
-                </div>
-                <label for="reContra">Confirm password</label>
-                <div>
-                    <input type="password" name="reContra" id="" >
-                </div>
-                <div>
-                    <button type="submit" class="register">Registrarse</button>
-                </div>
-            </form>
+    <main>
+        <section class="upcoming">
+            <div class="buttonUpcoming">
+                <button class="uPcomingPast">
+                    <h3 class="titularesUP">UPCOMING</h3>
+                </button>
+                <span>-</span>
+                <button class="uPcomingPast">
+                    <h3 class="titularesPAST">PAST EVENTS</h3>
+                </button>
+            </div>
+            
+            <ul class="listaUpcoming">
+                
+                    <article class="articuloDescripcion">
+                        <img class="mundial" src= "/static/images/Corinthians-Boca Juniors.jpg"alt="Evento">
+                        
+                <div class="descripciones">
 
-        </div>
+                        <div class="div.descripcionLeft">
+                            <p class="partido">Corinthians vs Boca Juniors</p>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Estadio Arena de Sao Paulo</p>
+                            <p class="fecha"><i class="fas fa-calendar-alt"></i> 26/06 (21:30hrs ARG)</p>
+                        </div>
+
+                        <div class="div.descripcionRight">
+                            <p class="valorTicket">Valor: $70</p>
+                            <p><i class="fas fa-ticket-alt"></i> Disponibilidad - 5 tickets </p>
+                        </div>
+
+                        <button type="submit" class="boton-comprar"> <strong>Comprar</strong></button>
+
+                </div>
+
+                
+                    </article>
+            </ul>
+        </section>       
     </main>
     <footer class="pie">
         <div class="textoFooter">
