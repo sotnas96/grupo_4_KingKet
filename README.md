@@ -1,20 +1,20 @@
-<img src='sprint2/public/images/kingketLogo.jpg' width=50% text-aling=center>
-<h1 color=##F8D12F>KingKet</h1>
+<img src='sprint2/public/images/kingketLogo.jpg' width=50% text-align=center>
+<h1 color=#F8D12F>KingKet</h1>
 
 <p>El proyecto KingKet esta orientado a la venta de tickets para diferentes rubros, iniciando en deporte con la idea de expandir hacia eventos musicales, teatro y otros eventos relacionados al arte y entretimiento.</p>
 <p>La idea es optimizar la venta de tickets y garantizarle al usuario la mayor seguridad a la hora de efectuar la compra. Tambien como proyecto a futuro trabajar con los organizadores de eventos para que utilizen nuestra plataforma para promover todo tipo de eventos.
 Es un proyecto orientado a todas las edades, para disfrutar en familia y amigos.</p>
 
-<h3 text-aling=center>Descripcion de los integrantes del equipo.</h3>
+<h3 text-align=center>Descripcion de los integrantes del equipo.</h3>
 <h4>Santos Gonzalez Palau</h4> 
 <div>
-<img src='images-integrantes\perfil-santos.jpg' width=50% text-aling= center>
+<img src='images-integrantes\perfil-santos.jpg' width=50% text-align= center>
 <p>26 anos, nacido en Argentina,; viviendo actualmente en Florida y estudiante de Ingenieria Ambiental. Amante del deporte y de los grandes     eventos.</p>
 </div>
 
 <h4>Angel Angulo </h4>
 <div>
-<img src='images-integrantes\Imagen_Angel_Angulo.jpg' width=50% text-aling=center>
+<img src='images-integrantes\Imagen_Angel_Angulo.jpg' width=50% text-align=center>
 <p> 37 anos, nacido en Venezuela,; viviendo actualmente en Argentina. Trabajo para la empresa Johnson Controls. Fanatico del Futbol club Barcelona. </p>
 </div>
 

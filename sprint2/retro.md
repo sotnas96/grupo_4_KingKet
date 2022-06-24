@@ -1,5 +1,5 @@
-<h2 text-aling=center>Conclusiones sprint1</h2>
-<h3 color=##F8D12F>Keep Doing</h3>
+<h2 text-align=center>Conclusiones sprint1</h2>
+<h3 color=#F8D12F>Keep Doing</h3>
 <p>Continuar comunicandonos entre los integrantes del equipo para solucionar conflictos y discrepancias y motivarnos mutuamente a esforzarnos en el proyecyo </p>
 
 <h3 color=#F8D12F>More of</h3>
