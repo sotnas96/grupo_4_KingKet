@@ -42,9 +42,28 @@ div.burgerMenu{
     margin-right: 5px;
 }
 
-.libLogo , .mundial , .atp , .nbaFinals{
+.deporte{
     width: 100%;
     margin: 2px;
+}
+article.tickets{
+    position: relative;
+}
+.tickets button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+button{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color, 2s;
+}
+section:hover button {
+    background-color: #F8D12F;
 }
 footer{
     padding: 10px;
@@ -128,6 +147,7 @@ p.partido{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #F8D12F;
 }
 p.ubicacion{
     font-size: 16px;
@@ -162,4 +182,15 @@ li:hover {
 ul.listaUpcoming li:hover article.articuloCarrito {
     border: #F8D12F 1px solid;
     color: #F8D12F;
+}
+div.registro input{
+    margin: 20px;
+}
+div.recordarme input{
+    width: 5%;
+    margin-right: 0px;
+    margin-top: 5px;
+}
+div.recordarme label{
+    margin-left: 0px;
 }
