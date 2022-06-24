@@ -120,7 +120,7 @@ input{
 }
 button.register{
     color: #F8D12F;
-    padding: 3px;
+    padding: 5px;
     background-color: black;
     border-radius: 8px;
     width: 70%;
@@ -245,13 +245,10 @@ div button.uPcomingPast:hover h3{
     border-radius: 5px;
 
 }
-li:hover {
-    color: #F8D12F;
-}
+
 
 ul.listaUpcoming li:hover article.articuloCarrito {
     border: #F8D12F 1px solid;
-    color: #F8D12F;
 }
 div.registro input{
     margin: 20px;
