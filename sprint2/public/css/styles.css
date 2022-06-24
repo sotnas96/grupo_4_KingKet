@@ -143,6 +143,40 @@ div.descripcionProd{
     padding: 5px;
     color: white;
 }
+
+
+.articuloDescripcion{
+    width: 100%;
+    border: 1px white solid;
+    margin: 5px;
+    padding: 5px;
+    display: flexbox;
+    position: relative;
+   
+}
+
+.descripciones{
+display: flex;
+flex-direction: column;
+}
+
+
+div.descripcionLeft{
+    padding: 5px;
+    color: white;
+    display: block;
+    justify-content: flex-start;
+}
+
+div.descripcionRight{
+    padding: 5px;
+    color: white;
+    display: block;
+    justify-content: flex-end;
+
+}
+
+
 p.partido{
     font-size: 18px;
     font-weight: bold;
@@ -153,6 +187,39 @@ p.ubicacion{
     font-size: 16px;
     margin-bottom: 5px;
 }
+
+p.fecha{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+p.valorTicket{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.boton-comprar{
+
+width: 30%;
+background-color: #F8D12F;
+color: rgb(0, 0, 0);
+padding: 6px 6px;
+font-size: 16px;
+border-radius: 4px;
+text-align: center;
+margin-left: 60%;
+margin-top: 7%;
+box-sizing: border-box;
+position:absolute;
+transition: background-color 450ms;
+
+}
+    
+.boton-comprar:hover{
+    background-color: #06ff61;
+}
+
+
 h3.titularesUP{
     color: #F8D12F;
     margin: 5px;
