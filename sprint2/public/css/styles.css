@@ -62,7 +62,7 @@ button{
     cursor: pointer;
     transition: color, 2s;
 }
-section:hover button {
+section:hover button.ticket {
     background-color: #F8D12F;
 }
 footer{
@@ -180,17 +180,17 @@ div.descripcionRight{
 p.partido{
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin: 10px 0px;
     color: #F8D12F;
 }
 p.ubicacion{
     font-size: 16px;
-    margin-bottom: 5px;
+    margin: 10px 0px;
 }
 
 p.fecha{
     font-size: 16px;
-    margin-bottom: 5px;
+    margin: 10px 0px;
 }
 
 p.valorTicket{
@@ -201,8 +201,8 @@ p.valorTicket{
 .boton-comprar{
 
 width: 30%;
-background-color: #F8D12F;
-color: rgb(0, 0, 0);
+background-color: transparent;
+color: white;
 padding: 6px 6px;
 font-size: 16px;
 border-radius: 4px;
@@ -211,18 +211,21 @@ margin-left: 60%;
 margin-top: 7%;
 box-sizing: border-box;
 position:absolute;
+right: 10px;
+bottom: 10px;
 transition: background-color 450ms;
 
 }
     
 .boton-comprar:hover{
-    background-color: #06ff61;
+    background-color: #F8D12F;
+    color: black;
 }
 
 
 h3.titularesUP{
     color: #F8D12F;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
 }
 h3.titularesPAST{
