@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: helvetica;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    background-color: black;
+}
+header{
+    border-bottom: 15px;
+    background-color: black;
+    padding: 10px;
+}
+
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.logo{
+    width: 33%;
+    height: 50px;
+    align-self: center;
+}
+button.lupa,.menuHambur {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.busqueda{
+    display: none;
+}
+
+div.lupa-burger{
+    color: white;
+    width: 20%;
+    text-align: right;
+    align-self: center;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+p.navTicket, p.navLogin {
+    display: none;
+}
+a.link{
+    display: none;
+}
+
+main section{
+    margin: 20px ;
+}
+h2.titular{
+    margin:  5px;
+    border-bottom: 1px solid #666;
+    padding: 10px 0px;
+}
+img.deporte{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+img.nba{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+}
+.contenedorArticulos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulo{
+    position: relative;
+    width: 100%;    
+    margin: 5px;
+}
+.articulo button{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+button.ticket{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color, 2s;
+}
+article:hover button.ticket {
+    background-color: #F8D12F;
+    opacity: 0.5;
+}
+footer{
+    padding: 10px;
+    color: black;
+    background-color: #F8D12F;
+    border: 30px;
+    border-top: 1px solid #666;
+}
+ul.pie{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+li.textoFooter{
+    width: 33%;
+}
+footer div h4{
+    font-size: 12px;
+}
+footer ul a{
+    text-decoration: none;
+    color: black;
+}
+p.copyright{
+    font-size: 10px;
+    align-self: center;
+    margin: 20px 0;
+}
+h3.h3Register{
+    color: white;
+    margin: 10px 30px 0;
+    font-weight:300;
+    text-align: center;
+}
+main.registro{
+    margin: 20px 0;
+}
+
+form.formulario{
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 30px;
+    background-color: #F8D12F;
+    font-weight: 200;
+    color: black;
+    padding: 10px;
+}
+label{
+    margin-left: 20px;
+    font-size: 10px;
+}
+input{
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+    width: 70%;
+    margin: 2px 20px 20px ;
+}
+button.register{
+    color: #F8D12F;
+    padding: 5px;
+    background-color: black;
+    border-radius: 8px;
+    width: 70%;
+    margin: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+div.or{
+    margin: 10px 20px;
+}
+button.create{
+    color: #F8D12F;
+    padding: 5px;
+    background-color: black;
+    border-radius: 8px;
+    width:30%;
+    margin: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* estilando carrito */
+
+button.checkout{
+    background-color:white ;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+button.checkout:hover{
+    background-color: #F8D12F;
+}
+ul.listaUpcoming{
+    margin: 10px;
+}
+.articuloCarrito{
+    width: 100%;
+    border: 1px white solid;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+}
+button.editButton{
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    color: black;
+    background-color: #F8D12F;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+div.descripcionProd{
+    padding: 5px;
+    color: white;
+}
+
+
+.articuloDescripcion{
+    width: 100%;
+    border: 1px white solid;
+    margin: 5px;
+    padding: 5px;
+    display: flexbox;
+    position: relative;
+   
+}
+
+.descripciones{
+display: flex;
+flex-direction: column;
+}
+
+
+div.descripcionLeft{
+    padding: 5px;
+    color: white;
+    display: block;
+    justify-content: flex-start;
+}
+
+div.descripcionRight{
+    padding: 5px;
+    color: white;
+    display: block;
+    justify-content: flex-end;
+
+}
+
+
+p.partido{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: #F8D12F;
+}
+p.ubicacion{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+p.fecha{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+p.valorTicket{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.boton-comprar{
+
+width: 30%;
+background-color: transparent;
+color: white;
+padding: 6px 6px;
+font-size: 16px;
+border-radius: 4px;
+text-align: center;
+margin-left: 60%;
+margin-top: 7%;
+box-sizing: border-box;
+position:absolute;
+right: 10px;
+bottom: 10px;
+transition: background-color 450ms;
+
+}
+    
+.boton-comprar:hover{
+    background-color: #F8D12F;
+    color: black;
+}
+
+
+h3.titularesUP{
+    color: #F8D12F;
+    margin: 10px;
+    padding: 5px;
+}
+h3.titularesPAST{
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+ button.uPcomingPast{
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+div button.uPcomingPast:hover h3{ 
+    border: white 1px solid;
+    border-radius: 5px;
+
+}
+ul.listaUpcoming {
+    list-style: none;
+}
+
+ul.listaUpcoming li:hover article.articuloCarrito {
+    border: #F8D12F 1px solid;
+}
+div.registro input{
+    margin: 20px;
+}
+div.recordarme input{
+    width: 5%;
+    margin:10px 0px 20px 15px
+}
+div.recordarme label{
+    margin-left: 0px;
+}
+@media(min-width:481px){
+    .contenedorArticulos{
+        justify-content: space-between;
+    }
+    article.articulo{
+        width: 45%;  
+    }
+    .mainHeader{
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.lupa-burger{
+        display: none;
+    }
+    p.nav {
+        display: none;
+    }
+    .lupaIcon{
+        color: black;
+        align-self: flex-end;
+        margin-left: 3px;
+    }
+    
+    form.busqueda{
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        width: 30%;
+        padding: 3px;
+    }
+    input.barraBusqueda{
+        margin: 0px 3px;
+        outline: none;
+        width: 100%;
+    }
+    label.lupaLabel{
+        margin: 0px 5px;
+        padding: 2px;
+        border-left: 1px solid #666;
+    }
+    p.nav{
+        margin-right: 5px;
+    }
+    a.link i{
+        margin-right: 4px;
+    }
+    .ticketIcon{
+        rotate: 90deg;
+    }
+    a.link{
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    a.link:hover{
+        color:#F8D12F;
+    }
+    
+}
+@media (max-width: 481px){
+    ul.pie{
+        display: block;
+    }
+
+}
+@media (min-width:769px){
+    
+    form.formulario{
+        border: none;
+        border-radius: 8px;
+        margin: 10px 30px;
+        background-color: #F8D12F;
+        font-weight: 200;
+        color: black;
+        padding: 10px;
+    }
+    label{
+        margin-left: 20px;
+        font-size: 10px;
+        text-align: left;
+    }
+    input{
+        border-radius: 3px;
+        border: none;
+        padding: 3px;
+        width: 50%;
+        margin: 2px 20px 20px ;
+    }
+    button.register{
+        color: #F8D12F;
+        padding: 5px;
+        background-color: black;
+        border-radius: 8px;
+        width: 50%;
+        margin: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    article.articulo{
+        width: 23%;  
+    }
+    .logo{
+        height: 50px;
+        width: 200px;
+    }
+    p.nav {
+        display: block;
+    }
+    ul.listaUpcoming{
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    img.nbaCart{
+        width: 100%;
+    }
+    ul.listaUpcoming li{
+        width: 40%;
+        margin: 10px;
+        align-self: stretch;
+    }
+    .articuloCarrito{
+        width:100%;
+        border: 1px white solid;
+        margin: 5px;
+        padding: 5px;
+    }
+    div.descripcionProd{
+        padding: 5px;
+        color: white;
+    }
+    }   

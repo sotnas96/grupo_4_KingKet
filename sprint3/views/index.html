@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGKET</title>
+    <!--Font awesome , Iconos-->    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="mainHeader">
+            <img src="/static/images/kingketLogo.jpg" class="logo">
+
+            <div class="lupa-burger">
+                <button class="lupa">
+                    <i class="fas fa-search search"></i>
+                </button>
+                <button class="menuHambur">
+                    <i class="fas fa-bars burger"></i>
+                </button>
+            </div>
+            <form action="/productDetail" method="get" class="busqueda">
+                <input type="text" name="search" id="search" class="barraBusqueda" placeholder="Search by event, sport or game">
+                <label for="search" class="lupaLabel"><i class="fas fa-search lupaIcon"></i></label>
+            </form>
+            <a href="/productCart" class="link">
+                <i class="fas fa-ticket-alt ticketIcon"></i>
+                <p class="nav"> Tickets</p>
+            </a>
+            <a href="/login" class="link">
+                <i class="fas fa-user"></i>
+                <p class="nav"> LogIn</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <h2 class="titular">MAIN EVENTS</h2>
+            <div class="contenedorArticulos">
+                <article class="articulo">
+                    <img class="deporte" src="https://cdnb.artstation.com/p/marketplace/presentation_assets/001/397/019/medium/file.jpg?1638222034">
+                    <button class="ticket">tickets</button>
+                </article>
+                <article class="articulo">
+                    <img class="deporte" src="https://www.ticketingemotions.com/wp-content/uploads/2021/02/Copa-Libertadores.jpg">
+                    <button class="ticket">tickets</button>
+                </article>
+                <article class="articulo">
+                    <img class="nba" src="https://publish.one37pm.net/wp-content/uploads/2022/03/NBATwitter.png">
+                    <button class="ticket">tickets</button>
+                </article>
+                <article class="articulo">
+                    <img class="deporte" src="https://pbs.twimg.com/media/Eatn2keXYAAWVQV.png">
+                    <button class="ticket">tickets</button>
+                </article>
+
+            </div>
+            
+        </section>
+        <section class="principal">
+            <h2 class="titular">UPCOMING EVENTS</h2>
+            <div class="contenedorArticulos">
+                <article class="articulo">
+                    <img class="deporte" src="https://cdnb.artstation.com/p/marketplace/presentation_assets/001/397/019/medium/file.jpg?1638222034">
+                    <button class="ticket">tickets</button>
+                </article>
+                <article class="articulo">
+                    <img class="deporte" src="https://www.ticketingemotions.com/wp-content/uploads/2021/02/Copa-Libertadores.jpg">
+                    <button class="ticket">tickets</button>
+                </article>
+                <article class="articulo">
+                    <img class="nba" src="https://publish.one37pm.net/wp-content/uploads/2022/03/NBATwitter.png">
+                    <button class="ticket">tickets</button>
+                </article>
+                <article class="articulo">
+                    <img class="deporte" src="https://pbs.twimg.com/media/Eatn2keXYAAWVQV.png">
+                    <button class="ticket">tickets</button>
+                </article>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer class="pie">
+        <ul class="pie">
+            <li class="textoFooter">
+                <h4><a href="">Quienes somos</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Soporte</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Terminos de uso</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Crea tu evento</a></h4>
+            </li>
+        </ul>
+        <p class="copyright">Copyright  ©KINGKET </p>
+    </footer>
+</body>
+</html>

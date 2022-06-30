@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productDetail-KingKet</title>
+    <!--Font awesome , Iconos-->    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="mainHeader">
+            <img src="/static/images/kingketLogo.jpg" class="logo">
+
+            <div class="lupa-burger">
+                <button class="lupa">
+                    <i class="fas fa-search search"></i>
+                </button>
+                <button class="menuHambur">
+                    <i class="fas fa-bars burger"></i>
+                </button>
+            </div>
+            <form action="/productDetail" method="get" class="busqueda">
+                <input type="text" name="search" id="search" class="barraBusqueda" placeholder="Search by event, sport or game">
+                <label for="search" class="lupaLabel"><i class="fas fa-search lupaIcon"></i></label>
+            </form>
+            <a href="/productCart" class="link">
+                <i class="fas fa-ticket-alt ticketIcon"></i>
+                <p class="nav"> Tickets</p>
+            </a>
+            <a href="/login" class="link">
+                <i class="fas fa-user"></i>
+                <p class="nav"> LogIn</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="upcoming">
+            <div class="buttonUpcoming">
+                <h3 class="titularesUP">UPCOMING</h3>
+                
+                
+            </div>
+            
+            <ul class="listaUpcoming">
+                <li>
+
+                    <article class="articuloDescripcion">
+                        <img class="deporte" src= "/static/images/Corinthians-Boca Juniors.jpg"alt="Evento">
+                        
+                        <div class="descripciones">
+
+                            <div class="div.descripcionLeft">
+                                <p class="partido">Corinthians vs Boca Juniors</p>
+                                <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Estadio Arena de Sao Paulo</p>
+                                <p class="fecha"><i class="fas fa-calendar-alt"></i> 26/06 (21:30hrs ARG)</p>
+                            </div>
+
+                            <div class="div.descripcionRight">
+                                <p class="valorTicket">Valor: $70</p>
+                                <p><i class="fas fa-ticket-alt"></i> Disponibilidad - 5 tickets </p>
+                            </div>
+
+                            <button type="submit" class="boton-comprar"> <strong>Comprar</strong></button>
+
+                        </div>
+
+                
+                    </article>
+                </li>
+            </ul>
+        </section>       
+    </main>
+    <footer class="pie">
+        <ul class="pie">
+            <li class="textoFooter">
+                <h4><a href="">Quienes somos</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Soporte</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Terminos de uso</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Crea tu evento</a></h4>
+            </li>
+        </ul>
+        <p class="copyright">Copyright  ©KINGKET </p>
+    </footer>
+</body>
+</html>
