@@ -15,7 +15,7 @@ rel="stylesheet" />
         <div class="mainHeader">
             <img src="/static/images/kingketLogo.jpg" class="logo">
 
-            <div class="burgerMenu">
+            <div class="lupa-burger">
                 <button class="lupa">
                     <i class="fas fa-search search"></i>
                 </button>
@@ -23,6 +23,18 @@ rel="stylesheet" />
                     <i class="fas fa-bars burger"></i>
                 </button>
             </div>
+            <form action="/productDetail" method="get" class="busqueda">
+                <input type="text" name="search" id="search" class="barraBusqueda" placeholder="Search by event, sport or game">
+                <label for="search" class="lupaLabel"><i class="fas fa-search lupaIcon"></i></label>
+            </form>
+            <a href="/productCart" class="link">
+                <i class="fas fa-ticket-alt ticketIcon"></i>
+                <p class="nav"> Tickets</p>
+            </a>
+            <a href="/login" class="link">
+                <i class="fas fa-user"></i>
+                <p class="nav"> LogIn</p>
+            </a>
         </div>
     </header>
     <main>
@@ -63,17 +75,21 @@ rel="stylesheet" />
         </section>       
     </main>
     <footer class="pie">
-        <div class="textoFooter">
-            <h4><a href="">Quienes somos</a></h4>
-        </div>
-        <div class="textoFooter">
-            <h4><a href="">Soporte</a></h4>
-        </div>
-        <div class="textoFooter">
-            <h4><a href="">Terminos de uso</a></h4>
-        </div>
-        <p class="copyright">Copyright © Kingket </p>
-        <img src="/static/images/kingketLogo.jpg" class="logo">
+        <ul class="pie">
+            <li class="textoFooter">
+                <h4><a href="">Quienes somos</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Soporte</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Terminos de uso</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Crea tu evento</a></h4>
+            </li>
+        </ul>
+        <p class="copyright">Copyright  ©KINGKET </p>
     </footer>
 </body>
 </html>

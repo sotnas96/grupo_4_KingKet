@@ -15,7 +15,7 @@ rel="stylesheet" />
         <div class="mainHeader">
             <img src="/static/images/kingketLogo.jpg" class="logo">
 
-            <div class="burgerMenu">
+            <div class="lupa-burger">
                 <button class="lupa">
                     <i class="fas fa-search search"></i>
                 </button>
@@ -23,20 +23,32 @@ rel="stylesheet" />
                     <i class="fas fa-bars burger"></i>
                 </button>
             </div>
+            <form action="/productDetail" method="get" class="busqueda">
+                <input type="text" name="search" id="search" class="barraBusqueda" placeholder="Search by event, sport or game">
+                <label for="search" class="lupaLabel"><i class="fas fa-search lupaIcon"></i></label>
+            </form>
+            <a href="/productCart" class="link">
+                <i class="fas fa-ticket-alt ticketIcon"></i>
+                <p class="nav"> Tickets</p>
+            </a>
+            <a href="/login" class="link">
+                <i class="fas fa-user"></i>
+                <p class="nav"> LogIn</p>
+            </a>
         </div>
     </header>
     <main>
         <section class="upcoming">
             <div class="buttonUpcoming">
                 <button class="uPcomingPast">
-                    <h3 class="titularesUP">UPCOMING</h3>
+                    <h3 class="titularesUP">CARRITO</h3>
                 </button>
                 <span>-</span>
                 <button class="uPcomingPast">
-                    <h3 class="titularesPAST">PAST EVENTS</h3>
+                    <h3 class="titularesPAST">TUS TICKETS</h3>
                 </button>
             </div>
-            <ul class="listaUpcoming">
+            <ul class="listaUpcoming" type:none>
                 <li>
                     <article class="articuloCarrito">
                         <img class="deporte" src="https://cdnb.artstation.com/p/marketplace/presentation_assets/001/397/019/medium/file.jpg?1638222034" alt="">
@@ -46,34 +58,41 @@ rel="stylesheet" />
                             <p class="fecha"><i class="fas fa-calendar-alt"></i> 22/11 7:00hrs(13hrs ARG)</p>
                             <p><i class="fas fa-ticket-alt"></i> 2 tickets </p>
                         </div>
+                        <button class="editButton"><i class="fas fa-edit"></i></button>
                     </article>
                 </li>
                 <li>
                     <article class="articuloCarrito">
-                        <img class="deporte" src="https://publish.one37pm.net/wp-content/uploads/2022/03/NBATwitter.png" alt="">
+                        <img class="nba" src="https://publish.one37pm.net/wp-content/uploads/2022/03/NBATwitter.png" alt="">
                         <div class="descripcionProd">
                             <p class="partido">Golden State Warriors vs Boston Celtics</p>
                             <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Chase Center. San Francisco</p>
                             <p class="fecha"><i class="fas fa-calendar-alt"></i> 25/7 21:00hrs(22hrs ARG)</p>
                             <p><i class="fas fa-ticket-alt"></i> 5 tickets </p>
                         </div>
+                        <button class="editButton"><i class="fas fa-edit"></i></button>
                     </article>
                 </li>
             </ul>
+            <button class="checkout">CHECKOUT</button>
         </section>       
     </main>
     <footer class="pie">
-        <div class="textoFooter">
-            <h4><a href="">Quienes somos</a></h4>
-        </div>
-        <div class="textoFooter">
-            <h4><a href="">Soporte</a></h4>
-        </div>
-        <div class="textoFooter">
-            <h4><a href="">Terminos de uso</a></h4>
-        </div>
-        <p class="copyright">Copyright © Kingket </p>
-        <img src="/static/images/kingketLogo.jpg" class="logo">
+        <ul class="pie">
+            <li class="textoFooter">
+                <h4><a href="">Quienes somos</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Soporte</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Terminos de uso</a></h4>
+            </li>
+            <li class="textoFooter">
+                <h4><a href="">Crea tu evento</a></h4>
+            </li>
+        </ul>
+        <p class="copyright">Copyright  ©KINGKET </p>
     </footer>
 </body>
 </html>
