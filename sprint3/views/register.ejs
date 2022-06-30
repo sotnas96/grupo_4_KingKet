@@ -24,19 +24,19 @@ rel="stylesheet" />
             <form action="/" method="post" class="formulario">
                 <label for="nombre">Nombre</label>
                 <div>
-                    <input type="text" name="nombre" >
+                    <input type="text" name="nombre" required>
                 </div>
                 <label for="email">Email</label>
                 <div>
-                    <input type="email" name="email" >
+                    <input type="email" name="email" required>
                 </div>
                 <label for="contra">Password</label>
                 <div>
-                    <input type="password" name="contra" >
+                    <input type="password" name="contra" required minlength="8">
                 </div>
                 <label for="reContra">Confirm password</label>
                 <div>
-                    <input type="password" name="reContra" id="" >
+                    <input type="password" name="reContra" id="" required minlength="8">
                 </div>
                 <div>
                     <button type="submit" class="register">Registrarse</button>
