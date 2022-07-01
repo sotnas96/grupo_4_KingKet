@@ -9,11 +9,20 @@ const mainController = {
     register:(req,res) => {
         res.render('register')
     },
-    productDetail:(req, res) => {
-        res.render('productDetail')
+    // editProduct: (req , res) => {
+    //     res.render('editProduct')
+    // },
+    productDetailNBA:(req, res) => {
+        res.render('productDetailNBA')
     },
-    productCart: (req , res) => {
-        res.render('productCart')
+    productDetailRoland:(req, res) => {
+        res.render('productDetailRoland')
+    },
+    productDetailMundial:(req, res) => {
+        res.render('productDetailMundial')
+    },
+    productDetailLibertadores:(req, res) => {
+        res.render('productDetailLibertadores')
     }
 };
 

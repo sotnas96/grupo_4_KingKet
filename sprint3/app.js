@@ -8,8 +8,11 @@ app.use(express.static('public'))
 app.get('/', mainRouter);
 app.get('/login', mainRouter);
 app.get('/register', mainRouter);
-app.get('/productCart', mainRouter);
-app.get('/productDetail', mainRouter);
+// app.get('/editProduct', mainRouter);
+app.get('/productDetailNBA', mainRouter);
+app.get('/productDetailRoland', mainRouter);
+app.get('/productDetailMundial', mainRouter);
+app.get('/productDetailLibertadores', mainRouter);
  
 //falta levantar servidor//
 app.listen(4000 , () => {

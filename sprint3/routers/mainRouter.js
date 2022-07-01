@@ -8,8 +8,16 @@ router.get('/login' , mainController.login);
 
 router.get('/register' , mainController.register);
 
-router.get('/productCart' , mainController.productCart);
+router.get('/register' , mainController.register);
 
-router.get('/productDetail' , mainController.productDetail);
+// router.get('/editProduct' , mainController.productCart);
+
+router.get('/productDetailNBA' , mainController.productDetailNBA);
+
+router.get('/productDetailRoland' , mainController.productDetailRoland);
+
+router.get('/productDetailMundial' , mainController.productDetailMundial);
+
+router.get('/productDetailLibertadores' , mainController.productDetailLibertadores);
 
 module.exports = router;
