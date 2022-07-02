@@ -6,25 +6,37 @@
 body{
     font-family: helvetica;
     font-size: 14px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0;
     background-color: black;
 }
 header{
     border-bottom: 15px;
-    background-color: black;
     padding: 10px;
 }
-
+main{
+    margin-top: 50px;
+}
+.mainHeaderIndex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+}
 .mainHeader{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    background-color: black;
 }
 .logo{
-    width: 33%;
     height: 50px;
-    align-self: center;
+    text-align: center;
 }
 button.lupa,.menuHambur {
     background-color: transparent;
@@ -40,14 +52,9 @@ button.lupa,.menuHambur {
 div.lupa-burger{
     color: white;
     width: 20%;
-    text-align: right;
-    align-self: center;
     margin-right: 5px;
     display: flex;
     justify-content: flex-end;
-}
-p.navTicket, p.navLogin {
-    display: none;
 }
 a.link{
     display: none;
@@ -55,24 +62,21 @@ a.link{
 header{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 h1{
     display: none;
-    font-size: 30px;
-    text-align: center;
     position: absolute;
-    align-self: center;
-    top: 20%;
+    top: 24%;
 }
 .banner{
     display: none;
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    position:sticky;
     top: 0px;
-    left: 0px;
-    margin: 0px;
+    z-index: 10;
 }
 main section{
     margin: 20px ;
@@ -82,10 +86,18 @@ h2.titular{
     border-bottom: 1px solid #666;
     padding: 10px 0px;
 }
+img.indexImage{
+    width: 100%;
+}
+img.indexNba{
+    width: 100%;
+    
+    height: 80%;
+    margin-top: 20px;
+}
 img.deporte{
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
 }
 img.nba{
     width: 100%;
@@ -129,9 +141,7 @@ ul.pie{
     display: flex;
     justify-content: space-between;
     margin: 10px;
-}
-li.textoFooter{
-    width: 33%;
+    padding: 10px;
 }
 footer div h4{
     font-size: 12px;
@@ -151,38 +161,54 @@ h3.h3Register{
     font-weight:300;
     text-align: center;
 }
-main.registro{
-    margin: 20px 0;
-}
 
-form.formulario{
+.formulario{
     text-align: left;
     border: none;
     border-radius: 8px;
-    margin: 10px 30px;
+    margin: 10px 20%;
     background-color: #F8D12F;
     font-weight: 200;
     color: black;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
 }
-label{
-    margin-left: 20px;
-    font-size: 10px;
+ div.login{
+    width: 38%;
+
+ }
+ div.recordarme{
+    width: 38%;
+    margin: 20px 0px;
+ }
+a.linkRegister{
+    text-decoration: none;
+    color: #F8D12F;
 }
-input{
+input#contrasena, #userName {
     border-radius: 3px;
     border: none;
     padding: 3px;
-    width: 70%;
-    margin: 2px 20px 20px ;
+    width: 100%;
+    margin:20px 0px ;
+}
+
+input#nombreUser,#email,#contra,#reContra{
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+    width: 100%;
+    margin-bottom:20px;
+    margin-top: 5px;
 }
 button.register{
     color: #F8D12F;
     padding: 5px;
     background-color: black;
     border-radius: 8px;
-    width: 70%;
-    margin: 10px 20px;
+    width:38%;
     border: none;
     cursor: pointer;
 }
@@ -194,7 +220,7 @@ button.create{
     padding: 5px;
     background-color: black;
     border-radius: 8px;
-    width:30%;
+    width:38%;
     margin: 10px 20px;
     border: none;
     cursor: pointer;
@@ -202,32 +228,15 @@ button.create{
 
 /* estilando carrito */
 
-button.checkout{
-    background-color:white ;
-    color: black;
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    transition: all 1s;
-}
-button.checkout:hover{
-    background-color: #F8D12F;
-}
-ul.listaUpcoming{
-    margin: 10px;
-}
+
+
 .articuloCarrito{
     width: 100%;
-    border: 1px white solid;
-    margin: 5px;
     padding: 5px;
     position: relative;
+    margin-bottom: 20px;
 }
-button.editButton{
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
+button.editButtonS{
     color: black;
     background-color: #F8D12F;
     border: none;
@@ -235,9 +244,29 @@ button.editButton{
     padding: 2px;
     cursor: pointer;
 }
+button.editButtonXL{
+    display: none;
+}
+button.checkout{
+    padding: 5px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 30%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+button.checkout:hover{
+    background-color: #F8D12F;
+}
 div.descripcionProd{
     padding: 5px;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
+
 }
 
 
@@ -277,7 +306,6 @@ p.partido{
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0px;
-    color: #F8D12F;
 }
 p.ubicacion{
     font-size: 16px;
@@ -341,24 +369,53 @@ div button.uPcomingPast:hover h3{
     border-radius: 5px;
 
 }
-ul.listaUpcoming {
-    list-style: none;
-}
 
-ul.listaUpcoming li:hover article.articuloCarrito {
-    border: #F8D12F 1px solid;
-}
-div.registro input{
-    margin: 20px;
-}
-div.recordarme input{
-    width: 5%;
-    margin:10px 0px 20px 15px
-}
 div.recordarme label{
     margin-left: 0px;
 }
 @media(min-width:481px){
+    button.checkout{
+        padding: 5px;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        width: 30%;
+        margin-left: 50%;
+    }
+    button.editButtonS{
+        display: none;
+    }
+    button.editButtonXL{
+        display: block;
+        color: black;
+        background-color: #F8D12F;
+        border: none;
+        padding: 2px;
+        cursor: pointer;
+    }
+    div.descripcionProd{
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    img.deporte{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    img.nba{
+        width: 50%;
+        height: 80%;
+        margin-top: 20px;
+    }
+    .articuloCarrito{
+        display: flex;
+    }
     img.banner{
         display: block;
     }
@@ -366,7 +423,8 @@ div.recordarme label{
         display:block;
         font-size: 30px;
         font-family: 'Times New Roman', Times, serif;
-        top: 25%;
+        z-index: 11;
+        letter-spacing: -0.01em;
     }
     .contenedorArticulos{
         justify-content: space-between;
@@ -375,6 +433,10 @@ div.recordarme label{
         width: 45%;  
     }
     .mainHeader{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mainHeaderIndex{
         justify-content: space-around;
         align-items: center;
     }
@@ -392,17 +454,19 @@ div.recordarme label{
     
     form.busqueda{
         display: flex;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         justify-content: space-between;
         align-items: center;
         border-radius: 5px;
         width: 30%;
         padding: 3px;
     }
-    input.barraBusqueda{
+    input#buscador{
         margin: 0px 3px;
         outline: none;
         width: 100%;
+        border: none;
+        padding: 4px;
     }
     label.lupaLabel{
         margin: 0px 5px;
@@ -421,7 +485,7 @@ div.recordarme label{
     a.link{
         display: flex;
         text-decoration: none;
-        color: white;
+        color: rgb(255, 255, 255);
     }
     a.link:hover{
         color:#F8D12F;
@@ -432,46 +496,17 @@ div.recordarme label{
     ul.pie{
         display: block;
     }
+    label.record{
+        font-size: 10px;
+    }
 
 }
 @media (min-width:769px){
     h1{
         font-family: 'Times New Roman', Times, serif;
         display: block;
-        font-size: 60px;
-        letter-spacing: -0.01em;
+        font-size: 45px;
         top: 20%;
-    }
-    form.formulario{
-        border: none;
-        border-radius: 8px;
-        margin: 10px 30px;
-        background-color: #F8D12F;
-        font-weight: 200;
-        color: black;
-        padding: 10px;
-    }
-    label{
-        margin-left: 20px;
-        font-size: 10px;
-        text-align: left;
-    }
-    input{
-        border-radius: 3px;
-        border: none;
-        padding: 3px;
-        width: 50%;
-        margin: 2px 20px 20px ;
-    }
-    button.register{
-        color: #F8D12F;
-        padding: 5px;
-        background-color: black;
-        border-radius: 8px;
-        width: 50%;
-        margin: 10px 20px;
-        border: none;
-        cursor: pointer;
     }
     .logo{
         height: 50px;
@@ -480,27 +515,11 @@ div.recordarme label{
     p.nav {
         display: block;
     }
-    ul.listaUpcoming{
-        margin: 10px;
-        display: flex;
-        justify-content: space-between;
-    }
+    
     img.nbaCart{
         width: 100%;
     }
-    ul.listaUpcoming li{
-        width: 40%;
-        margin: 10px;
-        align-self: stretch;
-    }
-    .articuloCarrito{
-        width:100%;
-        border: 1px white solid;
-        margin: 5px;
-        padding: 5px;
-    }
-    div.descripcionProd{
-        padding: 5px;
-        color: white;
-    }
+    
+    
+    
     }   

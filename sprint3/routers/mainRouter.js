@@ -10,6 +10,8 @@ router.get('/register' , mainController.register);
 
 router.get('/register' , mainController.register);
 
+router.get('/productCart' , mainController.productCart);
+
 // router.get('/editProduct' , mainController.productCart);
 
 router.get('/productDetailNBA' , mainController.productDetailNBA);
