@@ -254,8 +254,7 @@ button.checkout{
     border-radius: 5px;
     border: none;
     text-align: center;
-    width: 30%;
-    margin-left: 10px;
+    width: 100%;
     cursor: pointer;
     transition: background-color 1s;
 }
@@ -367,23 +366,20 @@ h3.titularesPAST{
 div button.uPcomingPast:hover h3{ 
     border: white 1px solid;
     border-radius: 5px;
-
 }
 
 div.recordarme label{
     margin-left: 0px;
 }
 @media(min-width:481px){
-    button.checkout{
+    /* button.checkout{
         padding: 5px;
         color: black;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
         border: none;
         text-align: center;
-        width: 30%;
-        margin-left: 50%;
-    }
+    } */
     button.editButtonS{
         display: none;
     }
@@ -519,7 +515,36 @@ div.recordarme label{
     img.nbaCart{
         width: 100%;
     }
+    section.mainCheckout{
+        display: flex;
+        margin: 0px;
+    }
+    .articulosCheckout{
+        width: 70%;
+    }
+    .orderTotal{
+        width: 30%;
     
-    
-    
-    }   
+    }
+    } 
+
+    p.precio{
+        text-align: end;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    section.orderTotal h2{
+        margin-bottom: 10px;
+    }
+    .cajaCheckout{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section div:nth-child(3){
+        border-top: 1px solid #666;
+        padding-top: 2px;
+    }
+    div.cajaCheckout p:not(.precio){
+        width: 70%;
+        margin-bottom: 20px;
+    }  
