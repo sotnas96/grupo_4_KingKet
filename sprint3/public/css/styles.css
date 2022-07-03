@@ -268,16 +268,33 @@ div.descripcionProd{
 
 }
 
+/*estilando detalle de productos*/
+
+
+.deporteproducts{
+
+    display: flex;
+    flex-wrap: wrap;
+         
+}
+
+.deporte-nba {
+    width: 100%;
+        }
 
 .articuloDescripcion{
-    width: 100%;
+    display: block;
+    flex-direction: row;
+    font-size: 16px;
+    padding: 2%;
+    width: 30%;
+    height: 30%;
     border: 1px white solid;
-    margin: 5px;
-    padding: 5px;
-    display: flexbox;
-    position: relative;
-   
+    margin: auto;
+  
+    
 }
+        
 
 .descripciones{
 display: flex;
@@ -305,6 +322,7 @@ p.partido{
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0px;
+    color: #F8D12F;
 }
 p.ubicacion{
     font-size: 16px;
@@ -323,19 +341,16 @@ p.valorTicket{
 
 .boton-comprar{
 
-width: 30%;
+width: 60%;
 background-color: transparent;
 color: white;
 padding: 6px 6px;
 font-size: 16px;
+border-color: white;
 border-radius: 4px;
+margin-left: 20%;
+margin-top: 20px;
 text-align: center;
-margin-left: 60%;
-margin-top: 7%;
-box-sizing: border-box;
-position:absolute;
-right: 10px;
-bottom: 10px;
 transition: background-color 450ms;
 
 }
@@ -344,6 +359,8 @@ transition: background-color 450ms;
     background-color: #F8D12F;
     color: black;
 }
+
+
 
 
 h3.titularesUP{
