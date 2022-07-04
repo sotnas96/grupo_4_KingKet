@@ -270,6 +270,10 @@ div.descripcionProd{
 
 /*estilando detalle de productos*/
 
+.banner-nba{
+    width: 100%;
+}
+
 
 .deporteproducts{
 
@@ -288,7 +292,7 @@ div.descripcionProd{
     font-size: 16px;
     padding: 2%;
     width: 30%;
-    height: 30%;
+    height: 10%;
     border: 1px white solid;
     margin: auto;
   
