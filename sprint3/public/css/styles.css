@@ -581,7 +581,7 @@ div.recordarme label{
         display: flex;
         flex-wrap: wrap;
     }
-    section div:nth-child(3){
+    section.orderTotal div:nth-child(3){
         border-top: 1px solid #666;
         padding-top: 2px;
     }
