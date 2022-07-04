@@ -282,8 +282,10 @@ div.descripcionProd{
          
 }
 
-.deporte-nba {
-    width: 100%;
+.deporte-tenis {
+    width: 90%;
+    margin-left: 5%;
+    border: 1px white solid;
         }
 
 .articuloDescripcion{
@@ -352,7 +354,6 @@ padding: 6px 6px;
 font-size: 16px;
 border-color: white;
 border-radius: 4px;
-/*margin-left: 20%;*/
 margin-top: 20px;
 text-align: center;
 transition: background-color 450ms;
@@ -370,6 +371,15 @@ margin-left: 21%;
 margin-top: 5%;
 position: absolute;
 }
+
+.icono-tenis{
+    width: 5%;
+    margin-left: 21%;
+    margin-top: 5%;
+    position: absolute;
+    }
+
+
 
 
 
