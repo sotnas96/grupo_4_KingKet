@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('../partials/head')%>
-<body>
-    <%- include('../partials/header')%>
-    <main>
-        
-        <img class="banner-nba" src="/static/images/Tenis/tenis-cancha2.jpg" alt="NBA COURT">
 
-        <div class="buttonUpcoming">
-            <h3 class="titularesUP">UPCOMING WIMBLEDON MATCHES</h3>
-       </div>
+    <body>
+        <%- include('../partials/header')%>
+            <main>
 
-        <section class="deporteproducts">
-                 
+                <img class="banner-nba" src="/static/images/Tenis/tenis-cancha2.jpg" alt="TENIS COURT">
+
+                <div class="buttonUpcoming">
+                    <h3 class="titularesUP">UPCOMING WIMBLEDON MATCHES</h3>
+                </div>
+
+                <section class="deporteproducts">
+
 
                     <article class="articuloDescripcion">
-                        
-                        <img class="deporte-tenis" src="/static/images/Tenis/tenis-novac-vs-jannik.jpg" alt="Evento">
+
+                        <div>
+                            <h1 class="banner-tenis-title">KINGS OF ATP EVENTS</h1>
+                            <img class="deporte-tenis" src="/static/images/Tenis/tenis-novac-vs-jannik.jpg"
+                                alt="Evento">
+                        </div>
 
                         <div class="descripciones">
 
-                                
+
                             <div class="div.descripcionLeft">
-                                
-                                <img class="icono-tenis" src="/static/images/Tenis/tenis-wimbledon-logo.jpg" alt="icono_nba">
+
+                                <img class="icono-tenis" src="/static/images/Tenis/tenis-wimbledon-logo.png"
+                                    alt="icono_tenis">
                                 <p class="partido">Novoak Djokovic vs Jannik Sinner</p>
                                 <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>Londres, Inglaterra</p>
                                 <p class="fecha"><i class="fas fa-calendar-alt"></i> 06/07 (14:00hrs ARG)</p>
-                                
+
                             </div>
 
                             <div class="div.descripcionRight">
-                                
+
                                 <p class="valorTicket">Valor: $200</p>
                                 <p><i class="fas fa-ticket-alt"></i> Disponibilidad - 50 tickets </p>
                                 <button type="submit" class="boton-comprar"> <strong>Comprar</strong></button>
-                                
-                            
+
+
                             </div>
 
                         </div>
@@ -44,13 +50,14 @@
                     </article>
 
                     <article class="articuloDescripcion">
-                        
+
                         <img class="deporte-tenis" src="/static/images/Tenis/tenis-nadal-vs-botic.jpg" alt="Evento">
 
                         <div class="descripciones">
 
                             <div class="div.descripcionLeft">
-                                <img class="icono-tenis" src="/static/images/Tenis/tenis-wimbledon-logo.jpg" alt="icono_nba">
+                                <img class="icono-tenis" src="/static/images/Tenis/tenis-wimbledon-logo.png"
+                                    alt="icono_tenis">
                                 <p class="partido">Rafael Nadal vs Botic Van de Zandschulp</p>
                                 <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>Londres, Inglaterra</p>
                                 <p class="fecha"><i class="fas fa-calendar-alt"></i> 07/07 (14:00hrs ARG)</p>
@@ -65,16 +72,17 @@
                         </div>
 
                     </article>
-      
+
                     <article class="articuloDescripcion">
-                        
+
                         <img class="deporte-tenis" src="/static/images/Tenis/tenis-cristian-vs-alex.jpg" alt="Evento">
 
                         <div class="descripciones">
 
                             <div class="div.descripcionLeft">
 
-                                <img class="icono-tenis" src="/static/images/Tenis/tenis-wimbledon-logo.jpg" alt="icono_nba">
+                                <img class="icono-tenis" src="/static/images/Tenis/tenis-wimbledon-logo.png"
+                                    alt="icono_tenis">
                                 <p class="partido">Cristian Garin vs Alex de Minaur</p>
                                 <p class="ubicacion"><i class="fas fa-map-marker-alt"></i>Londres, Inglaterra</p>
                                 <p class="fecha"><i class="fas fa-calendar-alt"></i> 08/07 (14:00hrs ARG)</p>
@@ -91,11 +99,12 @@
 
                     </article>
 
-                    
-        </section>
 
-    </main>
-    
-    <%- include('../partials/footer') %>
-</body>
+                </section>
+
+            </main>
+
+            <%- include('../partials/footer') %>
+    </body>
+
 </html>
