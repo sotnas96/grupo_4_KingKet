@@ -9,7 +9,7 @@ app.get('/', mainRouter);
 app.get('/login', mainRouter);
 app.get('/register', mainRouter);
 app.get('/productCart', mainRouter);
-// app.get('/editProduct', mainRouter);
+app.get('/editProducts', mainRouter);
 app.get('/productDetailNBA', mainRouter);
 app.get('/productDetailRoland', mainRouter);
 app.get('/productDetailMundial', mainRouter);
