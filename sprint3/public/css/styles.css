@@ -357,6 +357,52 @@ cursor: pointer;
 
 /*-------------Fin productDetail-------------------------*/
 
+
+/*-------------Formulario de Editproducts-------------------------*/
+
+
+
+.editproductitulo{
+    font-size: large;
+    color: white;
+    margin: 10px 30px 0;
+    text-align: center;
+}
+
+.editproduc{
+    width: 38%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.editproducdescripcion{
+    width: 38%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.editprodutsCategoria{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10%;   
+}
+
+.editproductscategoriasdeportes{
+    width: 38%;
+    margin-top: 2px;
+    margin-bottom: 15px;
+ }
+
+
+
+
+
+
+
+/*-------------Fin Formulario de Editproducts -------------------------*/
+
+
 h3.titularesUP{
     color: #F8D12F;
     margin: 30px;
@@ -563,3 +609,5 @@ div.recordarme label{
         width: 70%;
         margin-bottom: 20px;
     }  
+
+

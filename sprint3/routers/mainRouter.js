@@ -12,7 +12,7 @@ router.get('/register' , mainController.register);
 
 router.get('/productCart' , mainController.productCart);
 
-// router.get('/editProduct' , mainController.productCart);
+router.get('/editProducts' , mainController.editProducts);
 
 router.get('/productDetailNBA' , mainController.productDetailNBA);
 

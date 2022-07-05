@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+<body class="bodyRegister">
+    <%- include('../partials/headerUsers')%>
+    
+    <main class="registro">
+    
+        <div>
+            <p class="editproductitulo">CARGA Y EDITA TU EVENTO DEPORTIVO</p>
+            
+            <form action="/" method="post" class="formulario">
+            
+                <div class="editproduc">
+                    <label for="nombreUser" class="registroUser">Nombre del Evento</label>
+                    <input type="text" name="nombreUser" id="nombreUser" required>
+                </div>
+                 
+                <div class="editproducdescripcion">
+                    <label for="nombreUser" class="registroUser">Descripcion del Evento</label>
+                    <textarea name="nombreUser" id="nombreUser" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="editproduc">
+                    <h4 class="login">Foto del Producto:</h4>
+                    <input type="file" name="foto" accept=".jpg" required class="Control-input">
+                </div>
+
+                <h5 class="editprodutsCategoria">Categoria del Producto:</h5>
+        
+                <div class="editproductscategoriasdeportes">
+                    <input type="radio" name="Deporte" value="Futbol" id="Futbol">
+                    <label for="Comprador">Futbol</label>
+
+                    <input type="radio"  name="Deporte" value="Basketball" id="Basketball">
+                    <label for="Vendedor">Basketball</label>
+
+                    <input type="radio"  name="Deporte" value="Tenis" id="Tenis">
+                    <label for="Vendedor">Tenis</label>
+                </div>
+
+                <div class="editproduc">
+                    <label for="nombreUser" class="registroUser">Precio del Evento</label>
+                    <input type="text" name="nombreUser" id="nombreUser" required>
+                </div>
+                
+                <button type="submit" class="register">Confirmar</button>
+                
+            </form>
+    
+        </div>
+    </main>
+
+    <%- include('../partials/footer')%>
+</body>
+</html>
+
+
+
+

@@ -12,9 +12,9 @@ const mainController = {
     productCart:(req,res) => {
         res.render('products/productCart')
     },
-    // editProduct: (req , res) => {
-    //     res.render('products/editProduct')
-    // },
+    editProducts: (req , res) => {
+        res.render('products/editProducts')
+    },
     productDetailNBA:(req, res) => {
         res.render('products/productDetailNBA')
     },
