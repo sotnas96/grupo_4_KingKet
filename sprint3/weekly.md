@@ -29,4 +29,3 @@
 <h3>Trello</h3>
 <a href="https://trello.com/b/ZQu5T9mm/proyecto-integrador-e-commerce-kingtek">Acceso a tablero de tareas trello</a>
 
-
