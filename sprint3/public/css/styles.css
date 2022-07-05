@@ -77,6 +77,7 @@ h1{
     position:sticky;
     top: 0px;
     z-index: 10;
+    height: 480px;
 }
 main section{
     margin: 20px ;
@@ -262,9 +263,15 @@ button.checkout:hover{
     background-color: #F8D12F;
 }
 div.descripcionProd{
-    padding: 5px;
     background-color: rgb(255, 255, 255);
     color: black;
+    padding: 5px 10px 10px 10px;
+
+}
+div.descripcionProdDetail{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10px 10px 10px;
 
 }
 
@@ -272,44 +279,8 @@ div.descripcionProd{
 
 .banner-nba{
     width: 100%;
+    height: 480px;
 }
-
-.banner-nba-title{
-  font-size: 30; 
-  margin-left: 32%;
-  margin-top: 14%;
-  color:#F8D12F;
-  border: 3px white solid;  
-  
-}
-
-.banner-tenis-title{
-    font-size: 30; 
-    margin-left: 29%;
-    margin-top: 10%;
-    color:#F8D12F;
-    border: 3px white solid;  
-    
-  }
-
-  .banner-mundial-title{
-    font-size: 30; 
-    margin-left: 30%;
-    margin-top: 21%;
-    color:#F8D12F;
-    border: 3px white solid;  
-    
-  }
-
-  .banner-libertadores-title{
-    font-size: 30; 
-    margin-left: 15%;
-    margin-top: 12%;
-    color:#F8D12F;
-    border: 3px white solid;  
-    
-  }
-
 
 .deporteproducts{
 
@@ -318,64 +289,30 @@ div.descripcionProd{
          
 }
 
-.deporte-nba{
+.deporte-detail{
     width: 100%;
-    border: 3px white solid;
         }
-
-
-.deporte-tenis {
-    width: 90%;
-    margin-left: 5%;
-    border: 3px white solid;
-        }
-
-.deporte-mundial{
-    width: 100%;
-    border: 3px white solid;
-                }
 
 .articuloDescripcion{
-    display: block;
-    flex-direction: row;
-    font-size: 16px;
-    padding: 2%;
-    width: 30%;
-    height: 10%;
-    border: 3px white solid;
-    margin: auto;
-  
+    margin: 10px auto;
+    width: 100%;
+    border: 1px rgb(255, 255, 255) solid;
+    position: relative;
     
 }
-        
-
-.descripciones{
-display: flex;
-flex-direction: column;
-}
-
-
 div.descripcionLeft{
     padding: 5px;
-    color: white;
+    color: black;
     display: block;
     justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
 }
-
-div.descripcionRight{
-    padding: 5px;
-    color: white;
-    display: block;
-    justify-content: flex-end;
-
-}
-
 
 p.partido{
     font-size: 18px;
     font-weight: bold;
-    margin: 10px 0px;
-    color: #F8D12F;
+    margin-bottom: 10px;
+    color: black;
 }
 p.ubicacion{
     font-size: 16px;
@@ -389,51 +326,32 @@ p.fecha{
 
 p.valorTicket{
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+p.disponibilidad{
+    margin-bottom: 20px;
 }
 
 .boton-comprar{
 
-width: 60%;
-background-color: transparent;
-color: white;
-padding: 6px 6px;
+width: 100%;
+background-color:#166fe5;
+border: none;
+color: black;
+padding: 4px;
 font-size: 16px;
-border-color: white;
-border-radius: 4px;
-margin-top: 20px;
+border-radius: 5px;
 text-align: center;
 transition: background-color 450ms;
-
+position: absolute;
+bottom: 0px;
+cursor: pointer;
 }
     
 .boton-comprar:hover{
     background-color: #F8D12F;
     color: black;
 }
-
-.icono-nba{
-width: 5%;
-margin-left: 21%;
-margin-top: 5%;
-position: absolute;
-}
-
-.icono-tenis{
-    width: 6%;
-    margin-left: 18%;
-    margin-top: 5%;
-    position: absolute;
-    }
-
-.icono-mundial{
-    width: 9%;
-    margin-left: 17%;
-    margin-top: 4%;
-    position: absolute;
-    }
-
-
 
 
 
@@ -487,7 +405,7 @@ position: absolute;
 
 h3.titularesUP{
     color: #F8D12F;
-    margin: 10px;
+    margin: 30px;
     padding: 5px;
 }
 h3.titularesPAST{
@@ -637,6 +555,10 @@ div.recordarme label{
 
 }
 @media (min-width:769px){
+    .articuloDescripcion{
+        margin: 10px auto;
+        width: 30%;
+    }
     h1{
         font-family: 'Times New Roman', Times, serif;
         display: block;
@@ -679,7 +601,7 @@ div.recordarme label{
         display: flex;
         flex-wrap: wrap;
     }
-    section div:nth-child(3){
+    section.orderTotal div:nth-child(3){
         border-top: 1px solid #666;
         padding-top: 2px;
     }
