@@ -1,4 +1,4 @@
-<img src='sprint3/public/images/kingketLogo.jpg' width=50% text-align=center>
+<img src='/static/public/images/kingketLogo.jpg' width=50% text-align=center>
 <h1 color=#F8D12F>KingKet</h1>
 
 <h3 text-align=center>Reunion Weekly</h3>
