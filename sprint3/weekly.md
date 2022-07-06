@@ -1,4 +1,4 @@
-<img src='/images/kingketLogo.jpg' width=50% text-align=center>
+<img src="/static/images/kingketLogo.jpg" alt="logo" width=50% text-align=center>
 <h1 color=#F8D12F>KingKet</h1>
 
 <h3 text-align=center>Reunion Weekly</h3>
