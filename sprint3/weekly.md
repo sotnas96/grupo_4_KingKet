@@ -1,7 +1,7 @@
-<img src="/static/images/kingketLogo.jpg" alt="logo" width=50% text-align=center>
+<img src="/images/kingketLogo.jpg" alt="logo" width=50% text-align=center>
 <h1 color=#F8D12F>KingKet</h1>
 
-<h3 text-align=center>Reunion Weekly</h3>
+<h2 text-align=center>Reunion Weekly</h2>
 
 <p>Para la puesta en practica de esta modalidad de trabajo definimos como equipo realizar dos reuniones semanales los dias miercoles y sabados a las 9:00 am. Para desarrollar el proyecto KingKet</p>
 
@@ -26,6 +26,21 @@
 <p>Qué va a hacer hoy: Terminar la vista de edicion de eventos y el archivo weekly.md</p>
 
 
-<h3>Trello</h3>
-<a href="https://trello.com/b/ZQu5T9mm/proyecto-integrador-e-commerce-kingtek">Acceso a tablero de tareas trello</a>
+<h3 text-align=center>Resumen de Actividades del Sprint3 Santos Gonzalez Palau</h3>
 
+<lu>
+<li>Hacer responsive las vistas pendientes de sprint2 <li>
+<li>Crear estructura de archivos</li>
+<li>Instalar y configurar motor de plantillas ejs</li>
+<li>Crear vistas parciales</li>
+<li>Embeber codigo java en html de vistas parciales</li>
+<li>Corregir detalles de las diferentes vistas</li>
+
+<h3 text-align=center>Temas puntuales de la reunion</h3>
+
+
+<p>Qué hizo ayer: Chequear que este todo en orden dentro de la pagina</p>
+
+<p>Encontró con algún impedimento: Si. Modifique accidentalmente la hoja de estilos y me modifico la vista de carrito</p>
+
+<p>Qué va a hacer hoy: Encontrar el cambio y volver todo a como estaba</p>

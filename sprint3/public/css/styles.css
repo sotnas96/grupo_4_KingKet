@@ -167,7 +167,7 @@ h3.h3Register{
     text-align: left;
     border: none;
     border-radius: 8px;
-    margin: 10px 20%;
+    margin: 10px 8%;
     background-color: #F8D12F;
     font-weight: 200;
     color: black;
@@ -177,31 +177,36 @@ h3.h3Register{
     align-items: center ;
 }
  div.login{
-    width: 38%;
+    width: 60%;
+    margin: 10px 0px;
 
  }
+ div.newProduct{
+    width: 60%;
+    margin: 10px 0px;
+    font-weight: bold;
+ }
+ textarea#descripcionEvento{
+    margin-top: 5px;
+ }
+ div.cajaSubCategory{
+    font-weight: 100;
+    margin: 5px 0px;
+ }
  div.recordarme{
-    width: 38%;
+    width: 60%;
     margin: 20px 0px;
  }
 a.linkRegister{
     text-decoration: none;
     color: #F8D12F;
 }
-input#contrasena, #userName {
-    border-radius: 3px;
-    border: none;
-    padding: 3px;
-    width: 100%;
-    margin:20px 0px ;
-}
 
-input#nombreUser,#email,#contra,#reContra{
+input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent{
     border-radius: 3px;
     border: none;
     padding: 3px;
     width: 100%;
-    margin-bottom:20px;
     margin-top: 5px;
 }
 button.register{
@@ -209,19 +214,20 @@ button.register{
     padding: 5px;
     background-color: black;
     border-radius: 8px;
-    width:38%;
+    width:60%;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 div.or{
     margin: 10px 20px;
 }
-button.create{
+button.confirmProd{
     color: #F8D12F;
     padding: 5px;
     background-color: black;
     border-radius: 8px;
-    width:38%;
+    width:60%;
     margin: 10px 20px;
     border: none;
     cursor: pointer;
@@ -262,13 +268,7 @@ button.checkout{
 button.checkout:hover{
     background-color: #F8D12F;
 }
-div.descripcionProd{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    padding: 5px 10px 10px 10px;
-
-}
-div.descripcionProdDetail{
+div.descripcionProd,div.descripcionProdDetail{
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 5px 10px 10px 10px;
@@ -299,13 +299,6 @@ div.descripcionProdDetail{
     border: 1px rgb(255, 255, 255) solid;
     position: relative;
     
-}
-div.descripcionLeft{
-    padding: 5px;
-    color: black;
-    display: block;
-    justify-content: flex-start;
-    background-color: rgb(255, 255, 255);
 }
 
 p.partido{
@@ -360,7 +353,9 @@ cursor: pointer;
 
 /*-------------Formulario de Editproducts-------------------------*/
 
-
+#descripcionEvento{
+    width: 100%;
+}
 
 .editproductitulo{
     font-size: large;
@@ -369,30 +364,7 @@ cursor: pointer;
     text-align: center;
 }
 
-.editproduc{
-    width: 38%;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
 
-.editproducdescripcion{
-    width: 38%;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.editprodutsCategoria{
-    font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 10%;   
-}
-
-.editproductscategoriasdeportes{
-    width: 38%;
-    margin-top: 2px;
-    margin-bottom: 15px;
- }
 
 
 
@@ -437,6 +409,12 @@ div.recordarme label{
         border: none;
         text-align: center;
     } */
+    button.registerp,div.recordarme,div.login{
+        width:60%;
+    }
+    .formulario{
+        margin: 10px 20%;
+    }
     button.editButtonS{
         display: none;
     }
@@ -555,6 +533,9 @@ div.recordarme label{
 
 }
 @media (min-width:769px){
+    button.register,div.recordarme,div.login{
+        width:38%;
+    }
     .articuloDescripcion{
         margin: 10px auto;
         width: 30%;
