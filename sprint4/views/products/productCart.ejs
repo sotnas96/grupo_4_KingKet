@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <div >
+            <button class="uPcomingPast">
+                <h3 class="titularesUP">CARRITO</h3>
+            </button>
+            <span>-</span>
+            <button class="uPcomingPast">
+                <h3 class="titularesPAST">TUS TICKETS</h3>
+            </button>
+        </div>
+        <section class="mainCheckout">
+            <section class="articulosCheckout">
+                    <article class="articuloCarrito">
+                        <img class="deporte" src="https://cdnb.artstation.com/p/marketplace/presentation_assets/001/397/019/medium/file.jpg?1638222034" alt="">
+                        <div class="descripcionProd">
+                            <p class="partido">Argentina vs Arabia saudita</p>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Estadio Iconico de lusail. All Daayen</p>
+                            <p class="fecha"><i class="fas fa-calendar-alt"></i> 22/11 7:00hrs(13hrs ARG)</p>
+                            <p><i class="fas fa-ticket-alt"></i> 2 tickets  <button class="editButtonS">EDITAR</button></p>
+                        </div>
+                        <button class="editButtonXL"><i class="fas fa-edit"></i></button>
+                    </article>
+                    <article class="articuloCarrito">
+                        <img class="nba" src="https://publish.one37pm.net/wp-content/uploads/2022/03/NBATwitter.png" alt="">
+                        <div class="descripcionProd">
+                            <p class="partido">Golden State Warriors vs Boston Celtics</p>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Chase Center. San Francisco</p>
+                            <p class="fecha"><i class="fas fa-calendar-alt"></i> 25/7 21:00hrs(22hrs ARG)</p>
+                            <p><i class="fas fa-ticket-alt"></i> 5 tickets  <button class="editButtonS">EDITAR</button></p>
+                        </div>
+                        <button class="editButtonXL"><i class="fas fa-edit"></i></button>
+                    </article>
+                </section>
+                <section class="orderTotal">
+                    <h2>Your order</h2>
+                    <div class="cajaCheckout">
+                        
+                        <p>2 x FIFA WORLD CUP Arg vs Saudi</p>
+                        <p class="precio">$100</p>
+                        
+                        <p>5 x NBA Celtics vs Golden State</p>
+                        <p class="precio">$250</p>
+                        
+                    </div>
+                    <div class="cajaCheckout">
+                        <p>TOTAL</p>
+                        <P class="precio">$350</P>
+                        <button class="checkout">Place your order</button>
+                    </div>
+                </section>       
+                
+        </section>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>
