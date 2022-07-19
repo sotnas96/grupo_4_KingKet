@@ -202,7 +202,7 @@ a.linkRegister{
     color: #F8D12F;
 }
 
-input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent{
+input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent,#organizador{
     border-radius: 3px;
     border: none;
     padding: 3px;
@@ -340,6 +340,15 @@ position: absolute;
 bottom: 0px;
 cursor: pointer;
 }
+.editarEvento{
+    border: 1px #F8D12F solid;
+    background-color: #F8D12F;
+    color: black;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    }
     
 .boton-comprar:hover{
     background-color: #F8D12F;
@@ -537,7 +546,7 @@ div.recordarme label{
         width:38%;
     }
     .articuloDescripcion{
-        margin: 10px auto;
+        margin: 10px 10px;
         width: 30%;
     }
     h1{
