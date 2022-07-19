@@ -202,7 +202,7 @@ a.linkRegister{
     color: #F8D12F;
 }
 
-input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent,#organizador{
+input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent,#organizador,#location,#date{
     border-radius: 3px;
     border: none;
     padding: 3px;
@@ -466,9 +466,9 @@ div.recordarme label{
         z-index: 11;
         letter-spacing: -0.01em;
     }
-    .contenedorArticulos{
+    /* .contenedorArticulos{
         justify-content: space-between;
-    }
+    } */
     article.articulo{
         width: 45%;  
     }
