@@ -1,10 +1,10 @@
 <main class="registro">
     <div>
         <h3 class="h3Register">REGISTRATE</h3>
-        <form action="/" method="post" class="formulario">
+        <form action="/users/register" method="post" class="formulario">
             <div class="login">
                 <label for="nombreUser" class="registroUser">Nombre de usuario</label>
-                <input type="text" name="nombreUser" id="nombreUser" required>
+                <input type="text" name="userName" id="nombreUser" required>
             </div>
             <div class="login">
                 <label for="email" class="registroUser">Email</label>
@@ -12,11 +12,11 @@
             </div>
             <div class="login">
                 <label for="contra" class="registroUser">Password</label>
-                <input type="password" name="contrasena" id="contra" required minlength="8">
+                <input type="password" name="password" id="contra" required minlength="8">
             </div>
             <div class="login">
                 <label for="reContra" class="registroUser">Confirm password</label>
-                <input type="password" name="reContrasena" id="reContra" required minlength="8">
+                <input type="password" name="rePassword" id="reContra" required minlength="8">
             </div>
             
             <button type="submit" class="register">Registrarse</button>

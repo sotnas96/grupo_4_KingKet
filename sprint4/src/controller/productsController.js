@@ -15,33 +15,31 @@ const productsController = {
         arregloBasketball = products.filter(e => {
             return e.deporte == 'basketball'
         });
-        console.log(arregloTennis)
+        let arreglos = []
+        arreglos.push(arregloBasketball,arregloFootball,arregloTennis);
         res.render('products/products', {
-            tennis: arregloTennis,
-            football: arregloFootball,
-            basketball: arregloBasketball
+            deporte: arreglos
         })
     },
     carrito: (req,res) => {
         res.render('products/productCart')
     },
-    detailNba: (req,res) => {
-        res.render('products/detailNBA')
-    },
-    detailMundial: (req,res) => {
-        res.render('products/detailMundial')
-    },
-    detailTennis: (req,res) => {
-        res.render('products/detailRoland')
-    },
-    detailLibertadores: (req,res) => {
-        res.render('products/detailLibertadores')
-    },
     editarView: (req,res) => {
-        res.render('products/editProducts')
+        let id = req.params.id
+        let productoDetalle = products.filter(e => {
+            return e.id == id
+        })
+        res.render('products/editProducts', {productoDetalle: productoDetalle})
     },
     createView: (req,res) => {
         res.render('products/createProducts')
+    },
+    detailId: (req,res) => {
+        let id = req.params.id
+        let productoDetalle = products.filter(e => {
+            return e.id == id
+        })
+        res.render('products/detailProduct', {productoDetalle: productoDetalle})
     },
     create: (req,res) => {
         let archivoJSON = fs.readFileSync(path.join(__dirname , '../data/productsData.json'), 'utf-8')
@@ -64,12 +62,36 @@ const productsController = {
             precio: req.body.precio
             };
         archivoProd.push(newProd);
-        let archivoFinal = JSON.stringify(archivoProd);
+        let archivoFinal = JSON.stringify(archivoProd, null, ' ');
         fs.writeFileSync('./src/data/productsData.json', archivoFinal);
         res.redirect('/')
     },
     edit: (req,res) => {
-        res.send('viajo por put para edicion de producto')
+        let id = req.params.id;
+        products[id - 1].organizador = req.body.organizador,
+        products[id - 1].competencia= req.body.competencia,
+        products[id - 1].oponentes= req.body.oponentes,
+        products[id - 1].location= req.body.location,
+        products[id - 1].date= req.body.date,
+        products[id - 1].precio= req.body.precio
+        let productoJson = JSON.stringify(products, null, ' ');
+        fs.writeFileSync(path.join(__dirname,'../data/productsData.json'), productoJson)
+        res.redirect('/products/')
+    },
+    destroy: (req,res) => {
+        let id= req.params.id
+        let productosActualizados = products.filter( e => {
+            return e.id != id;
+        })
+        if (id != products.length){    //chequeo que el producto eliminado no sea el ultimo
+            for (i=(id-1); i<productosActualizados.length; i++){ //arranco a partir del producto eliminado
+                productosActualizados[i].id = i+1;
+            }
+        };
+        let productosJson = JSON.stringify(productosActualizados,null, ' ');
+        fs.writeFileSync(path.join(__dirname,'../data/productsData.json'), productosJson)
+        res.redirect('/')
+
     }
 }
 

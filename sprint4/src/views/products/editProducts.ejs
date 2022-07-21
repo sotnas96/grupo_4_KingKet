@@ -7,9 +7,12 @@
     <main class="registro">
     
         <div>
-            <p class="editproductitulo">EDITA TU EVENTO DEPORTIVO</p>
-            
-            <form action="/products/editProduct?_method=put" method="post" class="formulario">
+            <% for (detalle of productoDetalle) { %>
+
+                <p class="editproductitulo">EDITA EVENTO: <%= detalle.competencia %> - <%= detalle.oponentes%> </p>
+                
+            <% } %>
+            <form action="/products/<%= detalle.id %>/edit?_method=put" method="post" class="formulario">
                 <div class="newProduct">
                     <label for="organizador" >Organizador</label>
                     <input type="text" name="organizador" id="organizador" required>
@@ -23,25 +26,15 @@
                     <input type="text" name="oponentes" id="oponentes" required>
                 </div>
                 <div class="newProduct">
-                    <label for="descripcionEvento" >Descripcion del Evento</label>
-                    <textarea name="descripcionEvento" id="descripcionEvento" cols="30" rows="5"></textarea>
+                    <label for="location" >Ubicacion</label>
+                    <input type="text" name="location" id="location" required>
+                </div>
+                <div class="newProduct">
+                    <label for="date" >Fecha y Hora</label>
+                    <input type="text" name="date" id="date" required placeholder="DD/MM 23:59">
                 </div>
                 
-                <div class="newProduct">
-                    <label for="categoria" class="category">Categoria del Producto:</label>
-                    <div class="cajaSubCategory">
-                        <input type="radio" name="Deporte" value="Football" id="categoria">
-                        <label for="categoria">Football</label>
-                    </div>
-                    <div class="cajaSubCategory">
-                        <input type="radio"  name="Deporte" value="Basketball" id="categoria">
-                        <label for="categoria">Basketball</label>
-                    </div>
-                    <div class="cajaSubCategory">
-                        <input type="radio"  name="Deporte" value="Tennis" id="categoria">
-                        <label for="categoria">Tennis</label>
-                    </div>
-                </div>
+                
 
                 <div class="newProduct">
                     <label for="precioEvento" >Precio del Evento</label>

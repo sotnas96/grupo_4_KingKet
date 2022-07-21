@@ -48,7 +48,9 @@ button.lupa,.menuHambur {
 .busqueda{
     display: none;
 }
-
+a{
+    text-decoration: none;
+}
 div.lupa-burger{
     color: white;
     width: 20%;
@@ -250,6 +252,8 @@ button.editButtonS{
     border-radius: 5px;
     padding: 2px;
     cursor: pointer;
+    margin: 10px 0px;
+    width: 100%;
 }
 button.editButtonXL{
     display: none;
@@ -382,7 +386,12 @@ cursor: pointer;
 
 
 /*-------------Fin Formulario de Editproducts -------------------------*/
-
+h3.titularesDetail {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
 
 h3.titularesUP{
     color: #F8D12F;
@@ -409,7 +418,34 @@ div button.uPcomingPast:hover h3{
 div.recordarme label{
     margin-left: 0px;
 }
+a.borrar{
+    text-decoration: none;
+    color: black;
+}
+button.delete{
+    display: block;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px 0px;
+    transition: 1s;
+    border: none
+}
+button.delete:hover {
+    background-color: #166fe5;
+  }
+img.imgDetail{
+    width: 100%;
+    height: 100%;
+}
+div.imgProdDetail{
+    width: 100%;
+}
 @media(min-width:481px){
+    div.imgProdDetail{
+        width: 50%
+    }
     /* button.checkout{
         padding: 5px;
         color: black;
@@ -418,6 +454,13 @@ div.recordarme label{
         border: none;
         text-align: center;
     } */
+    .articuloDescripcion{
+        margin: 10px ;
+        width: 46%;
+        border: 1px rgb(255, 255, 255) solid;
+        position: relative;
+        
+    }
     button.registerp,div.recordarme,div.login{
         width:60%;
     }
@@ -427,6 +470,7 @@ div.recordarme label{
     button.editButtonS{
         display: none;
     }
+    
     button.editButtonXL{
         display: block;
         color: black;
@@ -448,10 +492,16 @@ div.recordarme label{
         height: 100%;
         box-sizing: border-box;
     }
+   
     img.nba{
         width: 50%;
         height: 80%;
         margin-top: 20px;
+    }
+    .articuloDetail{
+        display: flex;
+        margin: 10px auto;
+        width: 80%;
     }
     .articuloCarrito{
         display: flex;
@@ -549,6 +599,7 @@ div.recordarme label{
         margin: 10px 10px;
         width: 30%;
     }
+    
     h1{
         font-family: 'Times New Roman', Times, serif;
         display: block;

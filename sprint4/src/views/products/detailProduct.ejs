@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    <main>
+        
+        
+        
+        <% for (detalle of productoDetalle) { %>
+        <div class="buttonUpcoming">
+                
+                <h3 class="titularesDetail">DETALLE PRODUCTO: <%= detalle.id %> </h3>
+        </div>
+            <section class="mainCheckout">
+                
+                    <article class="articuloDetail">
+                        <div class="imgProdDetail">
+                            <img class="imgDetail" src="/images/uploads/<%= detalle.image %>"  alt="">
+                        </div>
+                        <div class="descripcionProd">
+                            <p class="partido"><%= detalle.organizador %> - <%= detalle.competencia %> </p>
+                            <p class="partido"><%= detalle.oponentes %> </p>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> <%= detalle.location%> </p>
+                            <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= detalle.date %> </p>
+                            <p><i class="fas fa-ticket-alt"></i> $ <%= detalle.precio %>   
+                            </p>
+                            <button class="editButtonS">
+                                <a href="/products/<%= detalle.id %>/edit  " class="borrar">
+                                EDITAR
+                                 </a>
+                            </button>
+                            <button class="delete"><a href="" class="borrar">COMPRAR</a></button>
+                            <form action="/products/<%= detalle.id %>?_method=delete" method="post">
+
+                                <button class="delete" type="submit"><i class="fas fa-trash-alt"></i></button>
+                            </form>
+                        </div>
+                        <button class="editButtonXL">
+                            <a href="/products/edit/<%= detalle.id %>" class="borrar">
+                                <i class="fas fa-edit"></i>
+                                
+                                 </a>
+                        </button>
+                    </article>
+                    
+              
+                
+                
+                
+            </section>
+        <% } %>
+        </main>
+        <%- include('../partials/footer') %>
+    </body>
+    </html>
