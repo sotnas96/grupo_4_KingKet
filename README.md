@@ -26,6 +26,14 @@ Es un proyecto orientado a todas las edades, para disfrutar en familia y amigos.
 <h3>Trello</h3>
 <a href="https://trello.com/b/ZQu5T9mm/proyecto-integrador-e-commerce-kingtek">Acceso a tablero de tareas trello</a>
 
+<h4>Alejandro Pacheco</h4> 
+<div>
+<img src='images-integrantes\' width=50% text-align= center>
+<p>44 anos, De Escobar, Pcia de Buenos Aires, Argentina. Trabajo como Jefe de Logística en una Pyme mediana. Estudio Lic. en Sistemas en U.N.G.S en los primeros años. Me gusta la música y trato de aprender a tocar. </p>
+</div>
+<h3>Trello</h3>
+<a href="https://trello.com/b/ZQu5T9mm/proyecto-integrador-e-commerce-kingtek">Acceso a tablero de tareas trello</a>
+
 <h4>#Referentes del mercado</h4>
 <p> <a href="https://www.eventbrite.com/">eventBrite</a>  El principal referente. Orientado a la musica y entretinimiento. Muy simple y accesible para cualquiera.</p>
 <p> <a href="https://ticketpass.org/"> Ticket pass</a></p>
