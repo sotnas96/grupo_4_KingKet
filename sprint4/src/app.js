@@ -19,7 +19,9 @@ app.use('/products', productoRoutes);
 app.use('/users', usersRoutes);
 
 //falta levantar servidor//
-app.listen(4000 , () => {
-    console.log("servidor levantado en puerto 4000")
+const puerto = process.env.PORT || 3000 ;
+require('dotenv').config()
+app.listen(puerto , () => {
+    console.log("servidor levantado en puerto: "+ puerto )
 })
 
