@@ -23,6 +23,13 @@ Es un proyecto orientado a todas las edades, para disfrutar en familia y amigos.
 <img src='images-integrantes\img-perfil-Javier-Zamorano.jpg' width=50% text-align= center>
 <p>34 anos, nacido y viviendo en Buenos Aires, Argentina,; Trabajo en desarrollo y producción en la industria del calzado. Me gustan las actividades al aire libre, deportes y Boca Juniors! </p>
 </div>
+
+<h4>Alejandro Pacheco</h4> 
+<div>
+<img src='images-integrantes\perfil Alejandro Pacheco.jpg' width=50% text-align= center>
+<p>44 anos, De Escobar, Pcia de Buenos Aires, Argentina. Trabajo como Jefe de Logística en una Pyme mediana. Estudio Lic. en Sistemas en U.N.G.S en los primeros años. Me gusta la música y trato de aprender a tocar. </p>
+</div>
+
 <h3>Trello</h3>
 <a href="https://trello.com/b/ZQu5T9mm/proyecto-integrador-e-commerce-kingtek">Acceso a tablero de tareas trello</a>
 
