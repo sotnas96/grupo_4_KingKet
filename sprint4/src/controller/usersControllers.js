@@ -29,7 +29,8 @@ const usersController = {
             }
 
             req.session.userLogedIn=userToLogin;
-            res.redirect('/')
+            
+            res.render('index',{userLogedIn:req.session.userLogedIn})
                       
         }else{
             return res.render('users/login',{errors:errors.errors});
@@ -39,7 +40,6 @@ const usersController = {
         res.render('users/register')
     },
     create: (req,res) => {
-        //envio de errores en el caso de que haya
         let errors=validationResult(req);
         if (errors.isEmpty()){
             let userFilePath = path.join(__dirname, '../data/userData.json');
