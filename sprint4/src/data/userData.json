@@ -10,5 +10,35 @@
   "userName": "franco",
   "email": "franco@gmail.com",
   "password": "frnaco123"
+ },
+ {
+  "userName": "Daniel",
+  "email": "daniel@gmail.com",
+  "password": "$2a$10$jS10B2A191hHbhwZQRS4pOGzFwnCKG.3OZyrgRMV9068Vlx7dp4OW"
+ },
+ {
+  "userName": "Alejandro",
+  "email": "alejandro@gmail.com",
+  "password": "$2a$10$Zf8sr1CzXxR7F52QH7zxBeX1X4TyNZ/21zcNn1ClYJTNC94x38YVu"
+ },
+ {
+  "userName": "Angel",
+  "email": "angel@gmail.com",
+  "password": "$2a$10$EAIJeEHzVYWAsaH3iF61/uaR5kECq6n1czTwOseDE6NzjprNZH7G2"
+ },
+ {
+  "userName": "Santos",
+  "email": "santos@gmail.com",
+  "password": "$2a$10$pr99PkF8ZyCfKn5HlXtKbOrGdbU0cIo2V7POZuYo381d3aBmkzN4G"
+ },
+ {
+  "userName": "ale",
+  "email": "alep1202@gmail.com",
+  "password": "$2a$10$N3azhv7OacEUWHPqWGMvJu9BIE0k8r5JT.OeeEPrKY5zXs9Zgk.Iq"
+ },
+ {
+  "userName": "Cosme",
+  "email": "cosme@gmail.com",
+  "password": "$2a$10$vOP4Q/aYGjaZ.CcXqPOCv.vAwVbui9RkoiZRO4B2ToQ6Kw.l/jEoS"
  }
 ]

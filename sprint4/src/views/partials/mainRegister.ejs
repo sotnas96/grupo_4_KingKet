@@ -2,6 +2,12 @@
     <div>
         <h3 class="h3Register">REGISTRATE</h3>
         <form action="/users/register" method="post" class="formulario">
+            <% if(locals.errors) {%>
+                    <% errors.forEach(error=> {%>
+                        <p><%=error.msg%></p>  
+                    <% }) %>
+            <%}%>
+          
             <div class="login">
                 <label for="nombreUser" class="registroUser">Nombre de usuario</label>
                 <input type="text" name="userName" id="nombreUser" required>

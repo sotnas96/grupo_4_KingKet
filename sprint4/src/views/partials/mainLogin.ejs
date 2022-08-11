@@ -3,10 +3,11 @@
     <div>
         <h3 class="h3Register">LOGIN</h3>
         
-        <form action="/" method="post" class="formulario">
-
+        <form action="/users/login" method="post" class="formulario">
+                
                 <div class="login">
-                    <input type="text" name="userName" id="userName" placeholder="Nombre de usuario" required minlength="3" maxlength="15" class="Control-input-login">
+                    <label for="email" class="registroUser">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su usuario/correo" required minlength="3" maxlength="50" class="Control-input-login">
                 </div>
 
                 <div class="login">
