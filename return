@@ -1,0 +1,426 @@
+[33mcommit 397670ea1f002eb4ed1e1ff5b01059fa90d059fe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Wed Jul 20 20:44:55 2022 -0400
+
+    CRUD productos y base datos terminado
+
+[33mcommit ae6fe4678d525f9716b0cb7fd623f1de920be736[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jul 19 00:08:03 2022 -0400
+
+    funcionalidad pagina products
+
+[33mcommit 292b8cc7073017b496717bf8699994b9a93c833e[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jul 18 21:09:00 2022 -0400
+
+    empezando sprint4
+
+[33mcommit 09952db68ad3dc0392c2e39d9e0977bbbbff94cb[m
+Author: JZ2388 <javier.e.zamorano@gmail.com>
+Date:   Thu Jul 14 20:46:43 2022 -0300
+
+    Readme actualizado Javier Zamorano con foto
+
+[33mcommit b5f61ae8079f1c8e4a5cc8dbc8c95e3919b0b838[m
+Author: JZ2388 <javier.e.zamorano@gmail.com>
+Date:   Thu Jul 14 20:42:58 2022 -0300
+
+    Readme actualizado Javier Zamorano
+
+[33mcommit f75efca0613f65a9e1f21c50c6597fa82371aa72[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Tue Jul 12 23:05:17 2022 -0300
+
+    Primera etapa del sprint4
+
+[33mcommit 81ef4846c41013ffe6ca8486794274e327e488cb[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Fri Jul 8 13:47:34 2022 -0400
+
+    fin sprint3
+
+[33mcommit f33b247b998ac28b14c32312607ddec55410f2b8[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Wed Jul 6 15:04:22 2022 -0300
+
+    Se creo el archivo weekly.md
+
+[33mcommit 4b6ab6d5d3ea9fbbbdc9c066fdd04d6676518438[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Wed Jul 6 15:00:17 2022 -0300
+
+    Se creo el archivo weekly.md
+
+[33mcommit 8c3a598a8966498fddf2be02f792e891717badea[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Wed Jul 6 14:58:54 2022 -0300
+
+    Se creo el archivo weekly.md
+
+[33mcommit e9098f89387e1b3560bcde229b040007edd8d1cc[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Wed Jul 6 14:55:48 2022 -0300
+
+    Se creo el archivo weekly.md
+
+[33mcommit 9f732421a0772fe4d688421d6e4199bd2092eefa[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Tue Jul 5 18:41:12 2022 -0300
+
+    Se creo el archivo weekly.md
+
+[33mcommit 6ff903e44755da4db9bca50714cf4d252db2e7ce[m
+Merge: 44fdc00 d852afb
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Tue Jul 5 18:40:54 2022 -0300
+
+    Merge branch 'master' of https://github.com/sotnas96/grupo_4_KingKet
+
+[33mcommit 44fdc00ddb4187ad549d25bac88d36ecddc3a94b[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Tue Jul 5 18:37:15 2022 -0300
+
+    Se creo el archivo weekly.md
+
+[33mcommit d852afb0aae4b4e823feda4749f00772f847552f[m
+Merge: 2b62d5a 8e01cfd
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jul 5 16:28:49 2022 -0400
+
+    Merge branch 'master' of https://github.com/sotnas96/grupo_4_KingKet
+
+[33mcommit 2b62d5a0c91a5bf6c1606143b701ca334cd6a3d0[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jul 5 16:28:39 2022 -0400
+
+    paginas de productos responsive
+
+[33mcommit 8e01cfdd7b6083b01226a89af199f7469d96f24d[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Tue Jul 5 16:45:09 2022 -0300
+
+    Se creo la vista de editProducts.ejs
+
+[33mcommit d211b8adcbd68fb62ffc7cd83a949d7c9327a7b1[m
+Merge: 315d04c acc7b56
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jul 4 13:23:15 2022 -0400
+
+    Merge branch 'master' of https://github.com/sotnas96/grupo_4_KingKet
+
+[33mcommit 315d04c44bba7a4203666f9906f7caa95e0602d5[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jul 4 13:23:09 2022 -0400
+
+    agregando estilos
+
+[33mcommit acc7b56caa670cc0b92b19b4f500589d3fab5b72[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Mon Jul 4 13:44:15 2022 -0300
+
+    Se creo la vista de products Detail libertadores
+
+[33mcommit e9d3a2688f09780b999ac44a68df6d8db4018341[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Mon Jul 4 09:42:34 2022 -0300
+
+    Se creo la vista de products Detail Mundial
+
+[33mcommit 01ba5edb4e9001152cc3be2d33a9c18045e94e52[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Mon Jul 4 08:37:06 2022 -0300
+
+    Se agrego titulo al banner de las vistas de basquet y tenis
+
+[33mcommit 680a44ce099a64366fd3f5745dadb987fa3023c3[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Sun Jul 3 23:32:01 2022 -0300
+
+    Se creo la vista de products Detail Tenis
+
+[33mcommit 4be13edb4713969e618aaf5775513c1aea8e8937[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Sun Jul 3 21:59:24 2022 -0300
+
+    Se agregop icono de NBA en la vista de products Detail NBA
+
+[33mcommit c3ffd16f18a0c0a8376522dcfd00c012b7ebdfad[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Sun Jul 3 21:19:14 2022 -0300
+
+    Se creo la vista de products Detail NBA
+
+[33mcommit 305539674452da0ce9b3c906dcd14acd522604b2[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Sun Jul 3 19:09:14 2022 -0300
+
+    Estilando vista de detalle de pruductos NBA
+
+[33mcommit 6c4c9dc13fac179e072f590cb57149f3d2aad9b4[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sat Jul 2 21:35:05 2022 -0400
+
+    mejorando detalles product cart
+
+[33mcommit cd6167de8adc89c42f3bfa212eebfefbe4492a68[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sat Jul 2 00:53:56 2022 -0400
+
+    vistas parciales listas
+
+[33mcommit f15ee2c336aad78f6deb6407dd53755925a09fbc[m
+Merge: 70ada52 58a1d6f
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Thu Jun 30 23:12:45 2022 -0400
+
+    Merge branch 'master' of https://github.com/sotnas96/grupo_4_KingKet
+
+[33mcommit 70ada5260cbb8cc07a40eb496fd5ba9c9643f93c[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Thu Jun 30 23:12:14 2022 -0400
+
+    rutas configuradas y extras
+
+[33mcommit 58a1d6feca86df39f8bca937c00c88658cb63681[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Thu Jun 30 17:07:27 2022 -0300
+
+    Se agregaron las carpetas de imagenes (Basketball, Futbol y Tenis) en la carpeta images
+
+[33mcommit eee06e323e40c9ce5956137e58b21d48ffc0befc[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Wed Jun 29 23:55:53 2022 -0400
+
+    arreglando login sprint2
+
+[33mcommit c90c6566cbd9172284569a6760d8c6833ac89c59[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Wed Jun 29 23:54:44 2022 -0400
+
+    instalacion ejs
+
+[33mcommit cd269cce2f058b48c9f143957563e62aca171beb[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Wed Jun 29 23:30:03 2022 -0400
+
+    estructura lista para comenzar con ejs
+
+[33mcommit bd2581d7182520d20dd02eaf38fee349e39384f2[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Wed Jun 29 23:28:09 2022 -0400
+
+    corrigiendo login
+
+[33mcommit c3679c8fd6926819c04ccfd57151e0f297d91b74[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Wed Jun 29 20:28:30 2022 -0400
+
+    correccion sprint2: vistas responsive
+
+[33mcommit 024e61e0d30ef20eea2f121c9ce2886cdff9c82f[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Fri Jun 24 15:39:26 2022 -0400
+
+    fin sprint2
+
+[33mcommit 901b310243d25757f63abc805cf99e3674824091[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Fri Jun 24 15:28:13 2022 -0400
+
+    agregando correc
+
+[33mcommit dad4cdad66fb00575a5dd2c169756dc7b323d6d7[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Fri Jun 24 14:58:40 2022 -0400
+
+    agregando correciones
+
+[33mcommit b8bfbcfabb2d00d69fe18d7ec15166a8683fd111[m
+Merge: d3b3ea1 5ffa617
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Fri Jun 24 14:54:14 2022 -0400
+
+    Merge branch 'master' of https://github.com/sotnas96/grupo_4_KingKet
+
+[33mcommit d3b3ea16b691de23a081c106290b4ae8fbbec133[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Fri Jun 24 14:53:37 2022 -0400
+
+    agregando correciones
+
+[33mcommit 5ffa617112f668c570efbc7f3aef6d2c9fcef53c[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Fri Jun 24 15:47:10 2022 -0300
+
+    Se creo la vista de producDetail.html
+
+[33mcommit 91255d59b324963437d3c9c7b6c213a7d928b085[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Thu Jun 23 12:55:07 2022 -0300
+
+    Modificacion en productDetail
+
+[33mcommit 338e194609e2484e2778d326dde4049babfceab5[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Thu Jun 23 12:16:05 2022 -0300
+
+    Se modifico productDetail
+
+[33mcommit b5e1f0d1caa3c5e21574e31db243baf4a67fa4a1[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Thu Jun 23 12:04:09 2022 -0300
+
+    Se agrego producDetail
+
+[33mcommit 6e6c3db2e8abc513c6dce3d52ec8793577bf16b6[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jun 21 20:46:53 2022 -0400
+
+    sacando Ignore
+
+[33mcommit b6e0796114fa8c27d1a1f6e1faa72b4998cbfa5c[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jun 21 20:22:36 2022 -0400
+
+    final spirnt2
+
+[33mcommit 234598f54487261ba5acb6f04915249b0ca624eb[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jun 21 19:43:03 2022 -0400
+
+    productCart sprint 2
+
+[33mcommit 77b57d2e1d1a18c2c46ee1003790db1fd3f99979[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Tue Jun 21 19:32:23 2022 -0400
+
+    pagina de carrito
+
+[33mcommit 47a3860f1a707b3aaa8be2f4e8ce756a52a95005[m
+Author: AngelAngulo19 <angelangulo19@gmail.com>
+Date:   Tue Jun 21 17:58:43 2022 -0300
+
+    se agrego el login
+
+[33mcommit 5ee95c9377ac1181bbbcaacd2dde252b6c4722ed[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jun 20 16:39:56 2022 -0400
+
+    pagina de inicio y register terminada
+
+[33mcommit dea6275de56276adf60913982c58334e7d17f96b[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jun 20 13:37:03 2022 -0400
+
+    archivo readme
+
+[33mcommit 66933b5ac7a7cb174fe7c922ca6ef45598b3a445[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jun 20 13:34:49 2022 -0400
+
+    arreglando readme
+
+[33mcommit dd2445747e2515d95d53a38017d35785e06ad229[m
+Merge: f4b00af 86c5268
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jun 20 13:32:26 2022 -0400
+
+    agregando index.html
+
+[33mcommit f4b00af29eb53e2db70b5ce93a07efa453b8a703[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Mon Jun 20 13:28:38 2022 -0400
+
+    creando index.html
+
+[33mcommit 86c5268980b7cd61848123b476bc6f90c63245a6[m
+Author: sotnas96 <104606545+sotnas96@users.noreply.github.com>
+Date:   Sun Jun 19 23:09:38 2022 -0400
+
+    Update README.md
+
+[33mcommit 97b11f4a02ddb1c6908b47836296b7258589d9bc[m
+Author: sotnas96 <104606545+sotnas96@users.noreply.github.com>
+Date:   Sun Jun 19 23:09:14 2022 -0400
+
+    Update README.md
+
+[33mcommit aecd500336ce90b94a233e7082b41f14baf0b746[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 23:02:03 2022 -0400
+
+    foto perfil integrantes
+
+[33mcommit 120285a64bc815464a9381f2dd997c4eeeafcf48[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 22:59:07 2022 -0400
+
+    modificando tamano logo
+
+[33mcommit d3d9d24e71500db6cd99173580da6ce986f660ad[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 12:18:59 2022 -0400
+
+    agregando imagenes de perfil
+
+[33mcommit 2602457a3017b727cb5a144bd2f360122969fe83[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 12:01:53 2022 -0400
+
+    corrigiendo readMe
+
+[33mcommit 520134c8448a826a86cfb4804b8b7dabb30bcb5a[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 11:55:56 2022 -0400
+
+    agregando imagenes y trello a readMe
+
+[33mcommit e3f184847afe3ea00612b98746d025c0dff74853[m
+Merge: 8c5b90e d627914
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 10:53:49 2022 -0400
+
+    Merge branch 'master' of https://github.com/sotnas96/grupo_4_KingKet
+
+[33mcommit 8c5b90e9f98f4c66ff8b174004397b4c2068aed5[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sun Jun 19 10:52:57 2022 -0400
+
+    primer commit
+
+[33mcommit d62791448ee32937ec0639b1347245adb2dcb3fb[m
+Author: sotnas96 <104606545+sotnas96@users.noreply.github.com>
+Date:   Sat Jun 18 17:48:01 2022 -0400
+
+    Update README.md
+    
+    Corrigiendo archivo readMe 1er sprint
+
+[33mcommit 86ea79a428249105f97696c2100aded23d9b2979[m
+Author: sotnas96 <104606545+sotnas96@users.noreply.github.com>
+Date:   Sat Jun 18 17:41:41 2022 -0400
+
+    Update README.md
+    
+    Agregando markdowns
+
+[33mcommit 9a03658b4d495cad2f94fe114f945dcc33818b20[m
+Author: sotnas96 <104606545+sotnas96@users.noreply.github.com>
+Date:   Sat Jun 18 17:26:49 2022 -0400
+
+    Create README.md
+    
+    Agregando archivo readME a ruta master.
+
+[33mcommit 11cb106e00de53f06cfe213e54968b47158d8625[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Sat Jun 18 17:22:59 2022 -0400
+
+    corrigiendo 1er sprint
+
+[33mcommit b32761157f67b6994dc2f82e405080c3ff8eccf9[m
+Author: sotnas96 <santosgonzalezpalau@gmail.com>
+Date:   Thu Jun 2 23:17:35 2022 -0400
+
+    wireframes
