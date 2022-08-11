@@ -21,7 +21,7 @@ const usersController = {
                     }
                 }
             }
-            //ACA TE QUEDASTE
+            
             if (userToLogin==undefined){
                 return res.render('users/login',{errors:[
                    {msg:'Credenciales inválidas'}
@@ -29,6 +29,7 @@ const usersController = {
             }
 
             req.session.userLogedIn=userToLogin;
+            res.redirect('/')
                       
         }else{
             return res.render('users/login',{errors:errors.errors});

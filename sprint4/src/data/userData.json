@@ -23,5 +23,10 @@
   "userName": "ale",
   "email": "alep1202@gmail.com",
   "password": "$2a$10$N3azhv7OacEUWHPqWGMvJu9BIE0k8r5JT.OeeEPrKY5zXs9Zgk.Iq"
+ },
+ {
+  "userName": "Cosme",
+  "email": "cosme@gmail.com",
+  "password": "$2a$10$vOP4Q/aYGjaZ.CcXqPOCv.vAwVbui9RkoiZRO4B2ToQ6Kw.l/jEoS"
  }
 ]
