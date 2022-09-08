@@ -1,0 +1,36 @@
+<main class="registro">
+       
+    <div>
+        <h3 class="h3Register">LOGIN</h3>
+        
+        <form action="/users/login" method="post" class="formulario">
+                
+                <div class="login">
+                    <label for="email" class="registroUser">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su usuario/correo" required minlength="3" maxlength="50" class="Control-input-login">
+                </div>
+
+                <div class="login">
+                    <input type="password" name="Contraseña" id="contrasena" placeholder="Contraseña" required minlength="8" class="Control-input-login">
+                </div>
+                <div class="recordarme">
+                    <input type="checkbox" name="recordar" id="recordar">
+                    <label for="recordar" class="record">Recordarme</label>
+                </div>
+        
+               <button type="submit" class="register"><strong>Ingresar a KingKet</strong></button>
+           
+           
+        </form>
+        <div class="formulario">
+            <div class="or">
+                Aun no tienes cuenta?
+            </div>
+            
+            <button class="register"> <a class="linkRegister" href="/users/register"> Crear cuenta</a> </button>
+
+        </div>
+        
+
+    </div>
+</main>

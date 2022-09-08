@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+<body>
+    <%- include('../partials/headerIndex')%>
+    <main>
+        <section class="profileBox">
+            <div class="avatarBox">
+                <img src="/images/users/<%= locals.userLogged.avatar%>" alt="" class="profilePic">
+                <h3 class="profileh3"><%= locals.userLogged.userName%></h3>
+                <p class="profileh3"><%= locals.userLogged.email%></p>
+            </div>
+            
+            <div class="profileData">
+                <button class="profileButton">
+                    <a href="">
+                        Privacidad
+                    </a>
+                </button>
+                <button class="profileButton">
+                    <a href="">
+                        Tus tarjetas
+                    </a>
+                </button>
+                <button class="profileButton">
+                    <a href="">
+                        Historial
+                    </a>
+                </button>
+                <button class="profileButton">
+                    <a href="">
+                        Editar perfil
+                    </a>
+                </button>
+                <!-- <div class="dataBox">
+                    <ul class="profileList">
+                        <a href="">
+                            <li>Privacidad</li>
+                        </a>
+                        <a href="">
+                            <li>Formas de pago</li>
+                        </a>
+                        <a href="">
+                            <li>Historial</li>
+                        </a>
+                        <a href="">
+                            <li>Editar perfil</li>
+                        </a>
+                    </ul>
+                </div> -->
+                
+            </div>
+            <a href="logout" class="linkProfile">
+                <button class="logoutButton">
+                    Cerrar sesion
+                </button>
+            </a>
+        </section>
+    </main>
+    <%- include('../partials/footer')%>
+</body>
+</html>
