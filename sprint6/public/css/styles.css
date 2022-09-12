@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: helvetica;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    background-color: black;
+}
+header{
+    border-bottom: 15px;
+    padding: 10px;
+}
+main{
+    margin-top: 50px;
+}
+.mainHeaderIndex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+}
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    background-color: black;
+}
+.logo{
+    height: 50px;
+    text-align: center;
+}
+button.lupa,.menuHambur {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.busqueda{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+div.lupa-burger{
+    color: white;
+    width: 20%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+a.link{
+    display: none;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 27%;
+}
+.banner{
+    display: none;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    height: 480px;
+}
+main section{
+    margin: 20px ;
+}
+h2.titular{
+    margin:  5px;
+    border-bottom: 1px solid #666;
+    padding: 10px 0px;
+}
+img.indexImage{
+    width: 100%;
+}
+img.indexNba{
+    width: 100%;
+    
+    height: 80%;
+    margin-top: 20px;
+}
+img.deporte{
+    width: 100%;
+    height: 100%;
+}
+img.nba{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+}
+.contenedorArticulos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulo{
+    position: relative;
+    width: 100%;    
+    margin: 5px;
+}
+.articulo button{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+button.ticket{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color, 2s;
+}
+article:hover button.ticket {
+    background-color: #F8D12F;
+    opacity: 0.5;
+}
+footer{
+    padding: 10px;
+    color: black;
+    background-color: #F8D12F;
+    border: 30px;
+    border-top: 1px solid #666;
+}
+ul.pie{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+footer div h4{
+    font-size: 12px;
+}
+footer ul a{
+    text-decoration: none;
+    color: black;
+}
+p.copyright{
+    font-size: 10px;
+    align-self: center;
+    margin: 20px 0;
+}
+h3.h3Register{
+    color: white;
+    margin: 10px 30px 0;
+    font-weight:300;
+    text-align: center;
+}
+
+.formulario{
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 8%;
+    background-color: #F8D12F;
+    font-weight: 200;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+ div.login{
+    width: 60%;
+    margin: 10px 0px;
+
+ }
+ div.newProduct{
+    width: 60%;
+    margin: 10px 0px;
+    font-weight: bold;
+ }
+ textarea#descripcionEvento{
+    margin-top: 5px;
+ }
+ div.cajaSubCategory{
+    font-weight: 100;
+    margin: 5px 0px;
+ }
+ div.recordarme{
+    width: 60%;
+    margin: 20px 0px;
+ }
+a.linkRegister{
+    text-decoration: none;
+    color: #F8D12F;
+}
+
+input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent,#organizador,#location,#date, #avatar{
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+    width: 100%;
+    margin-top: 5px;
+}
+.is-invalid{
+    color: red;
+    margin-top: 2px;
+}
+button.register{
+    color: #F8D12F;
+    padding: 5px;
+    background-color: black;
+    border-radius: 8px;
+    width:60%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+div.or{
+    margin: 10px 20px;
+}
+button.confirmProd{
+    color: #F8D12F;
+    padding: 5px;
+    background-color: black;
+    border-radius: 8px;
+    width:60%;
+    margin: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* estilando carrito */
+
+
+
+.articuloCarrito{
+    width: 100%;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+button.editButtonS{
+    color: black;
+    background-color: #F8D12F;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+    margin: 10px 0px;
+    width: 100%;
+}
+button.editButtonXL{
+    display: none;
+}
+button.checkout{
+    padding: 5px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+button.checkout:hover{
+    background-color: #F8D12F;
+}
+div.descripcionProd,div.descripcionProdDetail{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px 10px 10px 10px;
+
+}
+
+/*estilando detalle de productos*/
+
+.banner-nba{
+    width: 100%;
+    height: 480px;
+}
+
+.deporteproducts{
+
+    display: flex;
+    flex-wrap: wrap;
+         
+}
+
+.deporte-detail{
+    width: 100%;
+        }
+
+.articuloDescripcion{
+    margin: 10px auto;
+    width: 100%;
+    border: 1px rgb(255, 255, 255) solid;
+    position: relative;
+    
+}
+
+p.partido{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+p.ubicacion{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+p.fecha{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+p.valorTicket{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+p.disponibilidad{
+    margin-bottom: 20px;
+}
+
+.boton-comprar{
+
+width: 100%;
+background-color:#166fe5;
+border: none;
+color: black;
+padding: 4px;
+font-size: 16px;
+border-radius: 5px;
+text-align: center;
+transition: background-color 450ms;
+position: absolute;
+bottom: 0px;
+cursor: pointer;
+}
+.editarEvento{
+    border: 1px #F8D12F solid;
+    background-color: #F8D12F;
+    color: black;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    }
+    
+.boton-comprar:hover{
+    background-color: #F8D12F;
+    color: black;
+}
+
+
+
+/*-------------Fin productDetail-------------------------*/
+
+
+/*-------------Formulario de Editproducts-------------------------*/
+
+#descripcionEvento{
+    width: 100%;
+}
+
+.editproductitulo{
+    font-size: large;
+    color: white;
+    margin: 10px 30px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*-------------Fin Formulario de Editproducts -------------------------*/
+h3.titularesDetail {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+h3.titularesUP{
+    color: #F8D12F;
+    margin: 30px;
+    padding: 5px;
+}
+h3.titularesPAST{
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+ button.uPcomingPast{
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+div button.uPcomingPast:hover h3{ 
+    border: white 1px solid;
+    border-radius: 5px;
+}
+
+div.recordarme label{
+    margin-left: 0px;
+}
+a.borrar{
+    text-decoration: none;
+    color: black;
+}
+button.delete{
+    display: block;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px 0px;
+    transition: 1s;
+    border: none
+}
+button.delete:hover {
+    background-color: #166fe5;
+  }
+img.imgDetail{
+    width: 100%;
+    height: 100%;
+}
+div.imgProdDetail{
+    width: 100%;
+}
+/* Profile styling */
+section.profileBox{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    position: relative;
+}
+img.profilePic{
+    width: 50%;
+    height: 50%;
+    margin: 5px 10px;
+    
+}
+.profileh3{
+    margin: 5px 10px;
+}
+ul.profileList{
+    list-style-type: none;
+}
+ul.profileList a li{
+    margin: 10px;
+    font-size: 15px;
+}
+div.avatarBox{
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 50%;
+    flex-direction: column;
+    font-size: 15px;
+}
+p.profileh3{
+    font-size: 12;
+}
+div.dataBox{
+    margin: 5px;
+}
+div.profileData{
+    color: black;
+    width: 50%;
+    display: flex;
+    align-items:flex-start; 
+    position: relative;
+    flex-direction: column;
+    border-left: 1px solid #666;
+}
+a.linkProfile{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.profileButton{
+    padding: 15px;
+    margin: 10px;
+    width: 65%;
+    cursor: pointer;
+    border-radius: 10px;
+
+
+}
+.logoutButton{
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #166fe5;
+    background-color: white;
+    transition: 1s;
+}
+.logoutButton:hover{
+    background-color: #166fe5;
+}
+div.profileData button a{
+    color: black;
+}
+@media(min-width:481px){
+    div.imgProdDetail{
+        width: 50%
+    }
+    /* button.checkout{
+        padding: 5px;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+    } */
+    .articuloDescripcion{
+        margin: 10px ;
+        width: 46%;
+        border: 1px rgb(255, 255, 255) solid;
+        position: relative;
+        
+    }
+    button.registerp,div.recordarme,div.login{
+        width:60%;
+    }
+    .formulario{
+        margin: 10px 20%;
+    }
+    button.editButtonS{
+        display: none;
+    }
+    
+    button.editButtonXL{
+        display: block;
+        color: black;
+        background-color: #F8D12F;
+        border: none;
+        padding: 2px;
+        cursor: pointer;
+    }
+    div.descripcionProd{
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    img.deporte{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+   
+    img.nba{
+        width: 50%;
+        height: 80%;
+        margin-top: 20px;
+    }
+    .articuloDetail{
+        display: flex;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .articuloCarrito{
+        display: flex;
+    }
+    img.banner{
+        display: block;
+    }
+    h1{
+        display:block;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        z-index: 11;
+        letter-spacing: -0.01em;
+    }
+    /* .contenedorArticulos{
+        justify-content: space-between;
+    } */
+    article.articulo{
+        width: 45%;  
+    }
+    .mainHeader{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mainHeaderIndex{
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.lupa-burger{
+        display: none;
+    }
+    p.nav {
+        display: none;
+    }
+    .lupaIcon{
+        color: black;
+        align-self: flex-end;
+        margin-left: 3px;
+    }
+    
+    form.busqueda{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        width: 30%;
+        padding: 3px;
+    }
+    input#buscador{
+        margin: 0px 3px;
+        outline: none;
+        width: 100%;
+        border: none;
+        padding: 4px;
+    }
+    label.lupaLabel{
+        margin: 0px 5px;
+        padding: 2px;
+        border-left: 1px solid #666;
+    }
+    p.nav{
+        margin-right: 5px;
+    }
+    a.link i{
+        margin-right: 4px;
+    }
+    .ticketIcon{
+        rotate: 90deg;
+    }
+    a.link{
+        display: flex;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    a.link:hover{
+        color:#F8D12F;
+    }
+    
+}
+@media (max-width: 481px){
+    ul.pie{
+        display: block;
+    }
+    label.record{
+        font-size: 10px;
+    }
+
+}
+@media (min-width:769px){
+    button.register,div.recordarme,div.login{
+        width:38%;
+    }
+    .articuloDescripcion{
+        margin: 10px 10px;
+        width: 30%;
+    }
+    
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        display: block;
+        font-size: 45px;
+        top: 10%;
+        right: 30%;
+    }
+    .logo{
+        height: 50px;
+        width: 200px;
+    }
+    p.nav {
+        display: block;
+    }
+    
+    img.nbaCart{
+        width: 100%;
+    }
+    section.mainCheckout{
+        display: flex;
+        margin: 0px;
+    }
+    .articulosCheckout{
+        width: 70%;
+    }
+    .orderTotal{
+        width: 30%;
+    
+    }
+    } 
+
+    p.precio{
+        text-align: end;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    section.orderTotal h2{
+        margin-bottom: 10px;
+    }
+    .cajaCheckout{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.orderTotal div:nth-child(3){
+        border-top: 1px solid #666;
+        padding-top: 2px;
+    }
+    div.cajaCheckout p:not(.precio){
+        width: 70%;
+        margin-bottom: 20px;
+    }  
+
+

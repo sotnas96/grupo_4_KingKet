@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+<body class="bodyRegister">
+    <%- include('../partials/headerIndex')%>
+    
+    <main class="registro">
+    
+        <div>
+            <p class="editproductitulo">CREA TU EVENTO DEPORTIVO</p>
+            
+            <form action="/products/" method="post" class="formulario" enctype ="multipart/form-data">
+                <div class="newProduct">
+                    <label for="organizador" >Organizador</label>
+                    <input type="text" name="organizador" id="organizador" required>
+                </div>
+                <div class="newProduct">
+                    <label for="competencia" >Competencia</label>
+                    <input type="text" name="competencia" id="competencia" required>
+                </div>
+                <div class="newProduct">
+                    <label for="oponentes" >Oponentes</label>
+                    <input type="text" name="oponentes" id="oponentes" required>
+                </div>
+                <div class="newProduct">
+                    <label for="location" >Ubicacion</label>
+                    <input type="text" name="location" id="location" required>
+                </div>
+                <div class="newProduct">
+                    <label for="date" >Fecha y Hora</label>
+                    <input type="text" name="date" id="date" required placeholder="DD/MM 23:59">
+                </div>
+                <div class="newProduct">
+                    <label for="descripcionEvento" >Descripcion del Evento</label>
+                    <textarea name="descripcion" id="descripcionEvento" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="newProduct">
+                    <label for="imageEvent">Foto del Producto:</label>
+                    <input type="file" name="image" id="imageEvent" >
+                </div>
+
+                
+                <div class="newProduct">
+                    <label for="categoria" class="category">Categoria del Producto:</label>
+                    <div class="cajaSubCategory">
+                        <input type="radio" name="deporte" value="football" id="categoria">
+                        <label for="categoria">Football</label>
+                    </div>
+                    <div class="cajaSubCategory">
+                        <input type="radio"  name="deporte" value="basketball" id="categoria">
+                        <label for="categoria">Basketball</label>
+                    </div>
+                    <div class="cajaSubCategory">
+                        <input type="radio"  name="deporte" value="tennis" id="categoria">
+                        <label for="categoria">Tennis</label>
+                    </div>
+                </div>
+                <div class="newProduct">
+                    <label for="precioEvento" >Capacidad</label>
+                    <input type="text" name="capacity" id="precioEvento" placeholder="Cantidad de tickets disponibles" required>
+                </div>
+                <div class="newProduct">
+                    <label for="precioEvento" >Precio del Evento</label>
+                    <input type="text" name="precio" id="precioEvento" placeholder="Indique el menor precio disponible" required>
+                </div>
+                
+                <button type="submit" class="confirmProd">Confirmar</button>
+                
+            </form>
+    
+        </div>
+    </main>
+
+    <%- include('../partials/footer')%>
+</body>
+</html>
+
+
+
+
