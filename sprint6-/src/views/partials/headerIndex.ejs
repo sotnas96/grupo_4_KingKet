@@ -1,0 +1,51 @@
+<header>
+    <div class="mainHeaderIndex">
+        <a href="/">
+            <img src="/images/kingketLogo.jpg" class="logo">
+        </a>
+
+        <div class="lupa-burger">
+            <button class="lupa">
+                <i class="fas fa-search search"></i>
+            </button>
+            <button class="menuHambur">
+                <i class="fas fa-bars burger"></i>
+            </button>
+        </div>
+        <form action="/productDetail" method="get" class="busqueda">
+            <input type="text" name="search" id="buscador" placeholder="Search by event, sport or game">
+            <label for="buscador" class="lupaLabel"><i class="fas fa-search lupaIcon"></i></label>
+        </form>
+        <% if (locals.isLogged){ %>
+        <a href="/products/productCart" class="link">
+            <i class="fas fa-ticket-alt ticketIcon"></i>
+            <p class="nav"> Tickets</p>
+        </a>
+            <a href="/products/createProducts" class="link">
+                <p>Crea tu evento</p>
+            </a>
+            <a href="/users/profile" class="link">
+                <p><%= locals.userLogged.user_name%></p>
+            </a>
+        <%} else{ %>
+
+            <a href="/users/login" class="link">
+                <i class="fas fa-user"></i>
+                <p class="nav"> LogIn</p>
+            </a>
+        <%} %>
+        <!-- agregue solo esto-->
+        
+
+        <!-- <a> 
+            <p>
+                usuario
+            </p>
+            
+
+        </a> -->
+
+    </div>
+    <!-- <h1>KINGS OF EVENTS</h1>
+    <img src="/images/wembley_stadium.jpeg" alt="" class="banner"> -->
+</header>

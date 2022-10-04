@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <body>
+        <%- include('../partials/headerIndex') %>
+        <main>
+            <section class="principal">
+                
+                <h2 class="titular">TODOS LOS EVENTOS</h2>
+                <div class="contenedorArticulos">
+                            <% Events.forEach( event => { %>
+                            
+                                <article class="articuloDescripcion">
+                                    
+                                    
+                                    <img class="deporte-detail" src="/images/uploads/<%= event.image %>"
+                                    alt="Evento">
+                                    
+                                    <div class="descripcionProdDetail">
+                                        <p class="competencia" ><%= event.competence %></p>
+                                        <p class="partido"><%= event.oponents%></p>
+                                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> <%= event.location %></p>
+                                        <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= event.data_time %></p>
+                                        
+                                        <p class="valorTicket">Starting at $<%= event.price %></p>
+                                    </div>
+                                    <a href="/products/detail/<%= event.id %>">
+                                        <button type="submit" class="boton-comprar" >Details</button>
+                                    
+                                    </a>
+                            
+                                </article>
+                                
+                            <% }) %>
+                </div>
+                
+            </section>
+            
+            
+        </main>
+        <%- include('../partials/footer')%>
+    </body>
+</html>
