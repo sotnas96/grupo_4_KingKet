@@ -1,28 +1,12 @@
 const {check,body} = require('express-validator');
 const path = require('path');
-// const db = require('../database/models');
 
 const registerValidation = [
     body('userName')
         .isLength({min:4}).withMessage('El nombre de usuario debe contener al menos 4 caracteres'),
     body('email')
         .isEmail().withMessage('Ingrese con formato valido'),
-        // .custom((value, {req}) => {
-        //     let userCheck;
-        //     db.User.findOne({
-        //         where: {
-        //             email: req.body.email
-        //         }
-        //     })
-        //     .then(user => {userCheck = user.dataValues})
-        //     .catch( e => console.log(e));
-
-        //     if(userCheck){
-        //         throw new Error ('El email ingresado ya se encuentra registrado')
-        //     } else{
-        //         return true
-        //     }
-        // }),
+        
     body('avatar')
         .custom((value, {req}) => {
             let file = req.file;

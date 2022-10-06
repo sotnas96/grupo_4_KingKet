@@ -22,7 +22,9 @@
                             <p class="partido"><%= event.organizer %> - <%= event.competence %> </p>
                             <p class="partido"><%= event.oponents %> </p>
                             <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> <%= event.location%> </p>
-                            <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= event.data_time %> </p>
+                            <% const mediumTime = new Intl.DateTimeFormat("en-GB", { timeStyle: "short", dateStyle: "short" }); %>
+
+                            <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= mediumTime.format(event.data_time) %></p>
 
                             <p><i class="fas fa-ticket-alt"></i> $ <%= event.price%>   
                             </p>

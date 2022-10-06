@@ -26,8 +26,10 @@ const usersController = {
                     let passOk = bcrypt.compareSync(req.body.password, user.dataValues.user_password);
                     if(passOk){
                         delete user.dataValues.user_password;
+                        req.session.userEmail = user.dataValues.email
                         req.session.userLogged = user.dataValues;
                         if(req.body.recordar){
+                            res.cookie('dataUser', user.dataValues, {maxAge:(1000*60*10)})
                             res.cookie('userEmail', req.body.email, {maxAge:(1000*60*10)})
                             return res.redirect('/')
                         }
@@ -96,6 +98,7 @@ const usersController = {
     },
     logout: (req,res) => {
         res.clearCookie('userEmail');
+        res.clearCookie('dataUser')
         req.session.destroy();
         return res.redirect('/')
     }

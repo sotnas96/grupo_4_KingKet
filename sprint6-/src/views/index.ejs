@@ -48,15 +48,19 @@
                             
                         <article class="articuloDescripcion">
                             
-                            
-                            <img class="deporte-detail" src="/images/uploads/<%= event.image %>"
-                            alt="Evento">
+                            <div class="imagen-articulo">
+                                <img class="deporte-detail" src="/images/uploads/<%= event.image %>" alt="Evento">
+                               
+                            </div> 
                             
                             <div class="descripcionProdDetail">
                                 <p class="competencia" ><%= event.competence %></p>
                                 <p class="partido"><%= event.oponents%></p>
                                 <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> <%= event.location %></p>
-                                <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= event.data_time %></p>
+                                <!-- Configuracion fecha y hora en formato corto -->
+                                <% const mediumTime = new Intl.DateTimeFormat("en-GB", { timeStyle: "short", dateStyle: "short" }); %>
+
+                                <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= mediumTime.format(event.data_time) %></p>
                                 
                                 <p class="valorTicket">Starting at $<%= event.price %></p>
                             </div>

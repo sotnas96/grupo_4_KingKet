@@ -58,3 +58,19 @@ Qué va a hacer hoy:
 <p>Verificacion general de la entrega para finarlizar el sprint6</p>
 
 
+<h3>
+        Qué hizo ayer:
+</h3>
+<p>Verificacion general</p>
+
+<h3>
+Encontró con algún impedimento:
+</h3>
+
+<p>SI.</p>
+<p>Tuve que cambiar la logica del middleware de userLogged para evitar trabajar con promesas en el middleware</p>
+
+<h3>
+Qué va a hacer hoy:
+</h3>
+<p>Finalizar sprint6</p>
