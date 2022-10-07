@@ -56,7 +56,12 @@ const usersController = {
     },
     create: (req,res) => {
         let errores = validationResult(req); 
-        let userAvatarPath = req.file.filename;
+        let userAvatarPath;
+        if(req.file){
+            userAvatarPath = req.file.filename;
+
+        };
+
         if (! errores.isEmpty()) {
              fs.unlink(path.join(__dirname,`../../public/images/users/${userAvatarPath}`),
                  (err =>  err ? console.log(err) : console.log(`archivo ${userAvatarPath} borrado`))

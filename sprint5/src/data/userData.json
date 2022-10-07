@@ -19,5 +19,82 @@
   "email": "clemenbergallo96@hotmail.com",
   "avatar": "avatar-1662657271456.jpg",
   "password": "$2a$10$rv9sAqclREpmz3o/k1YN1OGerL7nXKKox9cavXgg1pKRv78S9ZAou"
+ },
+ {
+  "id": 4,
+  "userName": "Abelardo",
+  "email": "abelardo@gmail.com",
+  "avatar": "avatar-1663120271956.jpg",
+  "password": "$2a$10$LusKere9aaVPzJ0ni4cMyuzRDnnfb97UzvF4Jnum2ZZw/N2huF4nu"
+ },
+ {
+  "id": 5,
+  "userName": "Bibiana",
+  "email": "Bibiana@gmail.com",
+  "avatar": "avatar-1663120533915.jpg",
+  "password": "$2a$10$jl9xYXcOMGnRoS/DGHUUGuch32ePNbt90Q65S0Su.7ZguZjyY8df."
+ },
+ {
+  "id": 6,
+  "userName": "Carlos",
+  "email": "carlos@gmail.com",
+  "avatar": "avatar-1663123208791.jpg",
+  "password": "$2a$10$dHzgEPv.CX2EWihQJIzRt.XpuYi6gLmeQnvVj9RKFEAxvNag8WRGa"
+ },
+ {
+  "id": 7,
+  "userName": "Diego",
+  "email": "diego@gmail.com",
+  "avatar": "avatar-1663123327030.jpg",
+  "password": "$2a$10$bZMCofe7roSUKLCvtmE8LOAeoK6yTZ0lx/Z0QXy9yUmh/WX3Fk1QW"
+ },
+ {
+  "id": 8,
+  "userName": "Ernesto",
+  "email": "ernesto@gmail.com",
+  "avatar": "avatar-1663123426140.jpg",
+  "password": "$2a$10$knv4cfV0II6grr9rzzCmqONSSjGg0ZaeWA1b8sRayzXsx7wVnacz6"
+ },
+ {
+  "id": 9,
+  "userName": "Fernando",
+  "email": "fernando@gmail.com",
+  "avatar": "avatar-1663123673007.jpg",
+  "password": "$2a$10$zFDRvSo13yT81BLQX0GJYe6FDPsxdQpGEqFuxAZmfJ16VZNo6XfBm"
+ },
+ {
+  "id": 10,
+  "userName": "Gabriel",
+  "email": "gabriel@gmail.com",
+  "avatar": "avatar-1663123762149.jpg",
+  "password": "$2a$10$3UJKQFwAioyLJ7cEFBD2b.q9H84ws3E98nhVfjM4/shF7LaNL9ive"
+ },
+ {
+  "id": 11,
+  "userName": "Horacio",
+  "email": "horacio@gmail.com",
+  "avatar": "avatar-1663123853018.jpg",
+  "password": "$2a$10$ys2YMQAz9vjDkjzEuhwsTe1QwunhlL4zrvkis46cFnZVtMnt8B38i"
+ },
+ {
+  "id": 12,
+  "userName": "Ignacio",
+  "email": "ignacio@gmail.com",
+  "avatar": "avatar-1663123985631.jpg",
+  "password": "$2a$10$i1s6jmvxLJ90oAkRgDpZBuw4SQAKhBbhw8w7I/mkAbs89IT8kBA16"
+ },
+ {
+  "id": 13,
+  "userName": "Jorge",
+  "email": "jorge@gmail.com",
+  "avatar": "avatar-1663124086025.jpg",
+  "password": "$2a$10$bNDf7EDdUvESNNCnIyxRDOVVyhSz5szAAuywAXayBcqgDIWN9IZIW"
+ },
+ {
+  "id": 14,
+  "userName": "Karina",
+  "email": "karina@gmail.com",
+  "avatar": "avatar-1663124334457.jpg",
+  "password": "$2a$10$i34uG0DulLi1qjQFLRn5He0HcclVcC6Jdudsr2Yopzqv/1i/Q/Mj2"
  }
 ]
