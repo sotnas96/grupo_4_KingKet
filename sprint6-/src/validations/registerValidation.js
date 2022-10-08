@@ -5,7 +5,7 @@ const registerValidation = [
     body('userName')
         .isLength({min:4}).withMessage('El nombre de usuario debe contener al menos 4 caracteres'),
     body('email')
-        .isEmail().withMessage('Ingrese con formato valido'),
+        .isEmail().withMessage('Ingrese email con formato valido'),
         
     body('avatar')
         .custom((value, {req}) => {

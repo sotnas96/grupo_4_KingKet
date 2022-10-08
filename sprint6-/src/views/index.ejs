@@ -60,8 +60,7 @@
                                 <!-- Configuracion fecha y hora en formato corto -->
                                 <% const mediumTime = new Intl.DateTimeFormat("en-GB", { timeStyle: "short", dateStyle: "short" }); %>
 
-                                <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= mediumTime.format(event.data_time) %></p>
-                                
+                                <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= mediumTime.format(event.data_time) %></p>                        
                                 <p class="valorTicket">Starting at $<%= event.price %></p>
                             </div>
                             <a href="/products/detail/<%= event.id %>">

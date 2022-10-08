@@ -65,7 +65,6 @@ const usersController = {
                                                      old: req.body,
                                                      oldFile: req.file})
          };
-        let userCheck;
 
         db.User.findOne({
             where: {
