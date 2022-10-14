@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+<body class="bodyRegister">
+    <%- include('../partials/headerIndex')%>
+    <main class="registro">
+       
+        <div>
+            <h3 class="h3Register">LOGIN</h3>
+            
+            <form action="/users/login" method="post" class="formulario">
+                    
+                    <div class="login">
+                        <label for="email" class="registroUser">Email</label>
+                        <input type="email" name="email" id="email"  class="Control-input-login" value="<%= locals.old ? old.email : null %>">
+                        <% if(locals.errors && errors.email){%>
+                            <div class="is-invalid">
+                                <%= errors.email.msg %>
+                            </div>
+                        <%} %>
+                    </div>
+    
+                    <div class="login">
+                        <label for="password" class="registroUser">Contrasena</label>
+                        <input type="password" name="password" id="contrasena"   class="Control-input-login" >
+                        <% if(locals.errors && errors.password){%>
+                            <div class="is-invalid">
+                                <%= errors.password.msg%>
+                            </div>
+                                    
+                        <%} else if(locals.msg) {%>
+                            <div class="is-invalid">
+                                <%= msg %>
+                            </div>
+                        <% } %>   
+                    </div>
+                    <div class="recordarme">
+                        <input type="checkbox" name="recordar" id="recordar">
+                        <label for="recordar" class="record">Recordarme</label>
+                    </div>
+            
+                   <button type="submit" class="register"><strong>Ingresar a KingKet</strong></button>
+               
+               
+            </form>
+            <div class="formulario">
+                <div class="or">
+                    Aun no tienes cuenta?
+                </div>
+                
+                <button class="register"> <a class="linkRegister" href="/users/register"> Crear cuenta</a> </button>
+    
+            </div>
+            
+    
+        </div>
+    </main>
+
+    <%- include('../partials/footer')%>
+</body>
+</html>

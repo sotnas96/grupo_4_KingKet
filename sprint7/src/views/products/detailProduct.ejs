@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+<body>
+    <%- include('../partials/headerIndex')%>
+    <main>
+        
+        
+        
+        
+        <div class="buttonUpcoming">
+                
+                
+        </div>
+            <section class="mainCheckout">
+                
+                    <article class="articuloDetail">
+                        <div class="imgProdDetail">
+                            <img class="imgDetail" src="/images/uploads/<%= event.image %>"  alt="">
+                        </div>
+                        <div class="descripcionProd">
+                            <p class="partido"><%= event.organizer %> - <%= event.competence %> </p>
+                            <p class="partido"><%= event.oponents %> </p>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> <%= event.location%> </p>
+                            <% const mediumTime = new Intl.DateTimeFormat("en-GB", { timeStyle: "short", dateStyle: "short" }); %>
+
+                            <p class="fecha"><i class="fas fa-calendar-alt"></i> <%= mediumTime.format(event.data_time) %></p>
+
+                            <p><i class="fas fa-ticket-alt"></i> $ <%= event.price%>   
+                            </p>
+                            <% if (locals.userLogged){ %>
+                                <button class="editButtonS">
+                                    <a href="/products/<%= event.id %>/edit  " class="borrar">
+                                        EDITAR
+                                    </a>
+                                </button>
+                            <%} %>
+                            <button class="purchase"><a href="" class="borrar">COMPRAR</a></button>
+                            <% if (locals.userLogged){ %>
+                                <form action="/products/<%= event.id %>?_method=delete" method="post">
+                                    
+                                    <button class="delete" type="submit"><i class="fas fa-trash-alt"></i></button>
+                                </form>
+                            </div>
+                            <button class="editButtonXL">
+                                <a href="/products/<%= event.id %>/edit" class="borrar">
+                                    <i class="fas fa-edit"></i>
+                                    
+                                </a>
+                            </button>
+                            <%}  %>
+                    </article>
+                    
+              
+                
+                
+                
+            </section>
+     
+        </main>
+        <%- include('../partials/footer') %>
+    </body>
+    </html>
