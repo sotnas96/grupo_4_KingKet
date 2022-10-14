@@ -13,8 +13,7 @@ const usersController = {
         if (! errores.isEmpty()){
             console.log(errores)
             return res.render('users/login', {errors: errores.errors,
-                                                old: req.body})
-            
+                                                old: req.body})    
         }else{
             db.User.findOne({
                 where: {
@@ -100,6 +99,13 @@ const usersController = {
     profile: (req,res) => {
         res.render('users/profile')
     },
+    edit: (req,res) => {
+        res.render('users/edit', )
+        
+    },
+
+
+
     logout: (req,res) => {
         res.clearCookie('userEmail');
         res.clearCookie('dataUser')

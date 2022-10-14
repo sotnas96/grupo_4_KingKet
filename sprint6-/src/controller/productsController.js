@@ -1,4 +1,7 @@
+const { Sequelize, or } = require('sequelize')
 const db = require('../database/models')
+const Op = Sequelize.Op;
+
 const productsController = {
     productList: (req,res) => {
         db.Event.findAll({
@@ -15,6 +18,33 @@ const productsController = {
             .then(event => {
                 return res.render('products/detailProduct',{event})
             })
+    },
+    productSearch: (req,res) => {
+        let busqueda=req.query.search;
+        switch (busqueda){
+            case 'football' : busqueda = 1;
+            break;
+            case 'basketball' : busqueda = 2;
+            break;
+            case 'tennis' : busqueda = 3;
+            break;
+        }
+
+        db.Event.findAll({
+            where: { 
+                [Op.or]: [
+                    {oponents: {[Op.like]: '%' + busqueda + '%'}},
+                    {organizer: {[Op.like]: '%' + busqueda + '%'}},
+                    {competence: {[Op.like]: '%' + busqueda + '%'}},
+                    {location: {[Op.like]: '%' + busqueda + '%'}},
+                    {category_id: {[Op.like]: '%' + busqueda + '%'}},
+                  ]
+            },
+        })
+        .then(Events => {
+            console.log(Events)
+            return res.render('products/products', {Events})
+        })
     },
     carrito: (req,res) => {
         res.render('products/productCart')
