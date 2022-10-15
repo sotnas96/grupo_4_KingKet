@@ -11,6 +11,7 @@
                 <div class="login">
                     <label for="nombreUser" class="registroUser">Nombre de usuario</label>
                     <input type="text" name="userName" id="nombreUser" value="<%=locals.old ? old.userName : null %>">
+                    <div class="is-invalid"></div>
                     <% if(locals.errors && errors.userName){%>
                         <div class="is-invalid">
                             <%= errors.userName.msg%>
@@ -19,9 +20,12 @@
                     <div class="invalid-front"></div>
                     
                 </div>
+
                 <div class="login">
                     <label for="email" class="registroUser">Email</label>
-                    <input type="text" name="email" id="email" value="<%=locals.old ? old.email : null %>">
+                    <input type="email" name="email" id="email" value="<%=locals.old ? old.email : null %>">
+                    <div class="is-invalid"></div>
+                    
                     <% if(locals.errors && errors.email){%>
                         <div class="is-invalid">
                             <%= errors.email.msg%>
@@ -33,19 +37,27 @@
                         </div>
                     <%}%>
                 </div>
-                <div class="login">
-                    <label for="avatar" class="registroUser">Foto de perfil</label>
-                    <input type="file" name="avatar" id="avatar">
+
+                <div class="login avatar1">
+                    <label for="avatar" class="registroUser">
+                        <i class="fas fa-camera-retro"></i>
+                        <input type="file" name="avatar" id="avatar">
+                        <span class="avatarFront"></span>
+                    </label>
                     <% if(locals.errors && errors.avatar){%>
                         <div class="is-invalid">
                             <%= errors.avatar.msg%>
                         </div>
-                    <%}%>
-                    
+                        <%}%>
+                        
                 </div>
+                <div class="is-invalid login"></div>
+
                 <div class="login">
                     <label for="contra" class="registroUser">Password</label>
                     <input type="password" name="password" id="contra" >
+                    <div class="is-invalid"></div>
+
                     <% if(locals.errors && errors.password){%>
                         <div class="is-invalid">
                             <%= errors.password.msg%>
@@ -53,9 +65,12 @@
                     <%}%>
                     
                 </div>
+
                 <div class="login">
                     <label for="reContra" class="registroUser">Confirm password</label>
                     <input type="password" name="rePassword" id="reContra" >
+                    <div class="is-invalid"></div>
+
                     <% if(locals.errors && errors.rePassword){%>
                         <div class="is-invalid">
                             <%= errors.rePassword.msg%>
@@ -63,6 +78,8 @@
                     <%}%>
                     
                 </div>
+
+                
                     
                 <button type="submit" class="register">Registrarse</button>
                 

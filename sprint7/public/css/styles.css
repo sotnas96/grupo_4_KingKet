@@ -217,10 +217,24 @@ input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#op
     width: 100%;
     margin-top: 5px;
 }
+input#avatar{
+    display: none;
+}
+label.registroUser{
+     cursor: pointer;
+}
+div.avatar1{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 3px;
+}
 .is-invalid{
     color: red;
     margin-top: 2px;
     font-weight: 100;
+}
+.invalid-input{
+    border: 1px solid red;
 }
 button.register{
     color: #F8D12F;
