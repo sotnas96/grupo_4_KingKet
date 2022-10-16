@@ -3,7 +3,6 @@ const mainController = {
     index: (req,res) => { 
         db.Event.findAll({
             include: [{association: 'Category'}],
-            limit: 3,
             order: ['data_time']
         })
             .then(Events => {

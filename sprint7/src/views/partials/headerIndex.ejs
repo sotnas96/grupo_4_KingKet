@@ -15,7 +15,11 @@
         
         <form action="/products/search" method="get" class="busqueda">
             <input type="text" name="search" id="buscador" placeholder="Search category: tennis, football, basketball">
-            <label for="buscador" class="lupaLabel"><i class="fas fa-search lupaIcon"></i></label>
+            <label for="buscador" class="lupaLabel">
+                    <button type="submit" class="lupa">
+                        <i class="fas fa-search lupaIcon"></i>
+                    </button>
+            </label>
         </form>
         <% if (locals.isLogged){ %>
         <a href="/products/productCart" class="link">

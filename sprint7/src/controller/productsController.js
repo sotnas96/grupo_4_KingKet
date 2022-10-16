@@ -23,7 +23,8 @@ const productsController = {
             })
     },
     productSearch: (req,res) => {
-        let busqueda=req.query.search;
+        let busqueda= req.query.search;
+        
         switch (busqueda){
             case 'football' : busqueda = 1;
             break;
@@ -46,7 +47,7 @@ const productsController = {
         })
         .then(Events => {
             console.log(Events)
-            return res.render('products/products', {Events})
+            return res.render('products/products', {Events, busqueda: req.query.search})
         })
     },
 

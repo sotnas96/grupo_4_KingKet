@@ -227,6 +227,7 @@ div.avatar1{
     background-color: rgb(255, 255, 255);
     padding: 3px;
     border-radius: 3px;
+    text-align: center;
 }
 .is-invalid{
     color: red;
@@ -307,6 +308,10 @@ div.descripcionProdDetail{
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 5px 10px 10px 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*estilando detalle de productos*/
@@ -341,31 +346,23 @@ article.articuloDescripcion:hover {
 }
 p.competencia {
     font-size: 18px;
-    margin: 10px 0px;
     font-weight: bold;
 }
 p.partido{
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 10px;
     color: black;
 }
 p.ubicacion{
     font-size: 16px;
-    margin: 10px 0px;
 }
 
 p.fecha{
     font-size: 16px;
-    margin: 10px 0px;
 }
 
 p.valorTicket{
     font-size: 16px;
-    margin-bottom: 10px;
-}
-p.disponibilidad{
-    margin-bottom: 20px;
 }
 
 
