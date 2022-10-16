@@ -100,6 +100,39 @@ const usersController = {
     profile: (req,res) => {
         res.render('users/profile')
     },
+    edit: (req,res) => {
+        res.render('users/edit', )
+        
+    },
+    update: (req,res) => {
+        let errores = validationResult(req); 
+        let userAvatarPath;
+        if(req.file){
+            userAvatarPath = req.file.filename;
+        };
+        if (! errores.isEmpty()) {
+             fs.unlink(path.join(__dirname,`../../public/images/users/${userAvatarPath}`),
+                 (err =>  err ? console.log(err) : console.log(`archivo ${userAvatarPath} borrado`))
+                 );
+            return res.render('users/register', {   errors: errores.mapped(), 
+                                                     old: req.body,
+                                                     oldFile: req.file})
+         };
+        
+        db.User.update(
+            {
+            user_name: req.body.userName,
+            email: req.body.email,
+            user_password: bcrypt.hashSync(req.body.password, 10),
+            avatar_url: req.file.filename
+            },
+            {where:
+                 {
+                    email: req.body.email
+                }
+            })
+            .then(() => res.redirect('/index'))
+        },
     logout: (req,res) => {
         res.clearCookie('userEmail');
         res.clearCookie('dataUser')

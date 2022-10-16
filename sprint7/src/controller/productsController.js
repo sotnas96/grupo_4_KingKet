@@ -2,7 +2,7 @@ const db = require('../database/models')
 const fs = require('fs')
 const path = require('path')
 const {validationResult} = require('express-validator')
-const { Sequelize, or } = require('sequelize')git
+const { Sequelize, or } = require('sequelize')
 const Op = Sequelize.Op;
 
 const productsController = {

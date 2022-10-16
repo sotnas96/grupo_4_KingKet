@@ -31,6 +31,8 @@ router.get('/register', guestMiddleware,usersController.register);
 router.post('/register', uploadAvatar.single('avatar'), registerValidation,  usersController.create)
 
 router.get('/profile', authMiddleware,usersController.profile);
+router.get('/edit', authMiddleware,usersController.edit);
+router.post('/edit', authMiddleware,usersController.update);
 
 router.get('/logout', usersController.logout)
 module.exports = router;
