@@ -8,7 +8,7 @@ window.onload = function(){
     let inputRepass = document.querySelector('#reContra')
     inputRepass.disabled = true;
     let inputAvatar = document.querySelector("#avatar");
-    inputAvatar.disabled = true
+    inputAvatar.disabled = true;
     let form = document.querySelector("form.formulario");
     
     //capturando divs donde se escriben los mensajes de error desde el front
@@ -46,10 +46,12 @@ window.onload = function(){
 
 
         }else{
+            divAvatar.style.border = '2px solid blue'
             inputAvatar.disabled = false
             divEmail.innerHTML = '';
             inputEmail.style.border = '2px solid green';
             inputEmail.style.outline = 'none';
+
         }
     });
     let imageName = document.querySelector('.avatarFront');
