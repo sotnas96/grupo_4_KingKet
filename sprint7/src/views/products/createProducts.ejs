@@ -12,7 +12,8 @@
             <form action="/products/" method="post" class="formulario" enctype ="multipart/form-data">
                 <div class="newProduct">
                     <label for="organizador" >Organizador</label>
-                    <input type="text" name="organizador" id="organizador" >
+                    <input type="text" name="organizador" id="organizador" placeholder="Ingrese FIFA / NBA / ATP">
+                    <div class="is-invalid"></div>
                     <% if(locals.errorsProd && errorsProd.organizador){%>
                         <div class="is-invalid">
                             <%= errorsProd.organizador.msg%>
@@ -21,19 +22,24 @@
                 </div>
                 <div class="newProduct">
                     <label for="competencia" >Competencia</label>
-                    <input type="text" name="competencia" id="competencia" >
+                    <input type="text" name="competencia" id="competencia" placeholder="Ingrese NBA / Word cup Qatar 2022 / Futbol de Primera Division / Futbol de Primera Division " >
+                    <div class="is-invalid"></div>
                 </div>
+
                 <div class="newProduct">
                     <label for="oponentes" >Oponentes</label>
                     <input type="text" name="oponentes" id="oponentes" >
+                    <div class="is-invalid"></div>
                 </div>
                 <div class="newProduct">
                     <label for="location" >Ubicacion</label>
                     <input type="text" name="location" id="location" >
+                    <div class="is-invalid"></div>
                 </div>
                 <div class="newProduct">
                     <label for="date" >Fecha</label>
                     <input type="date" name="date" id="date"  >
+                    <div class="is-invalid"></div>
                 </div>
                 <div class="newProduct">
                     <label for="date" >Hora</label>
@@ -42,6 +48,7 @@
                 <div class="newProduct">
                     <label for="descripcionEvento" >Descripcion del Evento</label>
                     <textarea name="descripcion" id="descripcionEvento" cols="30" rows="5"></textarea>
+                    <div class="is-invalid"></div>
                     <% if(locals.errorsProd && errorsProd.descripcion){%>
                         <div class="is-invalid">
                             <%= errorsProd.descripcion.msg%>
@@ -76,7 +83,7 @@
                     </div>
                 </div>
                 <div class="newProduct">
-                    <label for="precioEvento" >Capacidad</label>
+                    <label for="capacidad" >Capacidad</label>
                     <input type="text" name="capacity" id="precioEvento" placeholder="Cantidad de tickets disponibles" >
                 </div>
                 <div class="newProduct">
@@ -90,8 +97,8 @@
     
         </div>
     </main>
-
     <%- include('../partials/footer')%>
+    <script src="/js/productsCreateValidat.js"></script>  
 </body>
 </html>
 

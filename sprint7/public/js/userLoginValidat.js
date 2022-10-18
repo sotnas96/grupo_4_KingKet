@@ -5,8 +5,7 @@ window.onload = function(){
     inputPassword.disabled = true;
     let form = document.querySelector("form.formulario");
     
-    //capturando divs donde se escriben los mensajes de error desde el front   
-    
+    //capturando divs donde se escriben los mensajes de error desde el front       
     let divEmail = document.querySelector("div.login:nth-child(1) :nth-child(3)");
     let divPass =  document.querySelector("div.login:nth-child(1) :nth-child(3)");
  
@@ -74,5 +73,4 @@ window.onload = function(){
             pIncorrectForm.innerHTML = ''
         }
     })
-    console.log("check")
 }
