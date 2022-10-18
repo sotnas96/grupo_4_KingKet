@@ -10,9 +10,9 @@ window.onload = function(){
     let inputAvatar = document.querySelector("#avatar");
     inputAvatar.disabled = true;
     let form = document.querySelector("form.formulario");
-    //capturando divs donde se escriben los mensajes de error desde el front
-    let divUserName = document.querySelector("div.login:nth-child(1) :nth-child(3)");
     
+    //capturando divs donde se escriben los mensajes de error desde el front
+    let divUserName = document.querySelector("div.login:nth-child(1) :nth-child(3)");    
     let divEmail = document.querySelector("div.login:nth-child(2) :nth-child(3)");
     let divPict = document.querySelector("div.is-invalid:nth-child(4)");
     let divPass =  document.querySelector("div.login:nth-child(5) :nth-child(3)");

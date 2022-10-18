@@ -13,6 +13,7 @@
                     <div class="login">
                         <label for="email" class="registroUser">Email</label>
                         <input type="email" name="email" id="email"  class="Control-input-login" value="<%= locals.old ? old.email : null %>">
+                        <div class="is-invalid"></div>
                         <% if(locals.errors && errors.email){%>
                             <div class="is-invalid">
                                 <%= errors.email.msg %>
@@ -23,6 +24,7 @@
                     <div class="login">
                         <label for="password" class="registroUser">Contrasena</label>
                         <input type="password" name="password" id="contrasena"   class="Control-input-login" >
+                        <div class="is-invalid"></div>
                         <% if(locals.errors && errors.password){%>
                             <div class="is-invalid">
                                 <%= errors.password.msg%>
@@ -54,8 +56,10 @@
             
     
         </div>
+        
     </main>
-
+    
     <%- include('../partials/footer')%>
+    <script src="/js/userLoginValidat.js"></script>
 </body>
 </html>

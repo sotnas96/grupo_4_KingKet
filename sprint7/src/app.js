@@ -7,9 +7,14 @@ const userLogged = require('./middlewares/userLoggedMiddle');
 const cookie = require('cookie-parser')
 
 app.use(express.urlencoded({extended: false}));
-// app.use(express.static('public'));
+//app.use(express.static('public'));
 app.use(methodOverride('_method'));
-app.use(express.static(path.join(__dirname, '../public')));
+//aca estaba escrito path.join
+
+app.use(express.static(path.resolve(__dirname, '../public')));
+
+
+
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine' , 'ejs');
 app.use(session({
