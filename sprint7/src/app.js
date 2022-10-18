@@ -23,11 +23,16 @@ app.use(userLogged);
 const mainRouter = require ('./routers/mainRouter');
 const productoRoutes = require('./routers/productsRoutes');
 const usersRoutes = require('./routers/usersRoutes');
+const apiProductsRoutes = require('./routers/api/apiProductRouter');
+const apiUsersRoutes = require('./routers/api/apiUserRouter');
 
 app.use('/', mainRouter);
 
 app.use('/products', productoRoutes);
 app.use('/users', usersRoutes);
+//rutas de apis
+app.use('/api/users', apiUsersRoutes);
+app.use('/api/products', apiProductsRoutes);
 
 //falta levantar servidor//
 const puerto = process.env.PORT || 3000 ;

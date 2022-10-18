@@ -29,6 +29,7 @@
                             <p><i class="fas fa-ticket-alt"></i> $ <%= event.price%>   
                             </p>
                             <p> <%= event.game_description%> </p>
+                            <p><%= event.Category.category%></p>
                             <% if (locals.userLogged){ %>
                                 <button class="editButtonS">
                                     <a href="/products/<%= event.id %>/edit  " class="borrar">
