@@ -13,6 +13,7 @@ const productApiController = {
                 meta:{
                     status: 200,
                     count: products.length,
+                    amountOfCat: category.length,
                     countByCat: category.map(categoryElement => {
                         return {
                             category: categoryElement.category,

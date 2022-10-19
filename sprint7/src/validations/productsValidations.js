@@ -10,7 +10,7 @@ const productValidator = [
     body('image')
         .custom((value, {req}) => {
             let archivo = req.file;
-            let extentions = ['jpg', 'jpeg', 'gif', 'png'];
+            let extentions = ['.jpg', '.jpeg', '.gif', '.png'];
             if(!archivo){
                 throw new Error ('Porfavor suba una imagen del producto')
             }else{

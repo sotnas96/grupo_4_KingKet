@@ -47,7 +47,7 @@ const productsController = {
         })
         .then(Events => {
             console.log(Events)
-            return res.render('products/products', {Events, busqueda: req.query.search})
+            return res.render('products/products', {Events, busqueda: (req.query.search) ? req.query.search : ''})
         })
     },
 

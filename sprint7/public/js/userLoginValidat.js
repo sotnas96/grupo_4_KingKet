@@ -4,10 +4,12 @@ window.onload = function(){
     let inputPassword = document.querySelector("#contrasena");
     inputPassword.disabled = true;
     let form = document.querySelector("form.formulario");
+    let pIncorrectForm  = document.querySelector('p.is-invalid')
+
     
     //capturando divs donde se escriben los mensajes de error desde el front       
     let divEmail = document.querySelector("div.login:nth-child(1) :nth-child(3)");
-    let divPass =  document.querySelector("div.login:nth-child(1) :nth-child(3)");
+    let divPass =  document.querySelector("div.login:nth-child(2) :nth-child(3)");
  
     const regExprEmail = /^[\w._#$&%+-]+@[\w.-]+\.[A-Za-z]{2,4}$/;
     inputEmail.addEventListener('change', ()=>{
@@ -30,15 +32,11 @@ window.onload = function(){
 
 
 
-    const regExpPass = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
     inputPassword.addEventListener('change', ()=> {
-        let checkPass = regExpPass.test(inputPassword.value);
-        console.log(inputPassword.value);
-        console.log(checkPass)
-        if(!checkPass){
+        if(inputPassword.value == ''){
 
             divPass.style.fontSize = '10px';
-            divPass.innerHTML = 'minimo 8 caracteres con al menos 1 mayus, 1 minus, 1 numero y 1 caracter especial';
+            divPass.innerHTML = 'Debe agregar su contrasena';
             inputPassword.style.border = '2px solid red';
             inputPassword.style.outline = 'none';
                    
@@ -59,13 +57,11 @@ window.onload = function(){
             errors.push('emailError')
         }
 
-        let checkPass = regExpPass.test(inputPassword.value);
         
-        if(!checkPass){
+        if(inputPassword.value == ''){
             errors.push('passError')
         }
   
-        let pIncorrectForm  = document.querySelector('p.is-invalid')
         if(errors.length > 0){
             e.preventDefault();
             pIncorrectForm.innerHTML= 'Revise sus datos'

@@ -5,8 +5,11 @@
         <%- include('../partials/headerIndex') %>
         <main>
             <section class="principal">
-                
-                <h2 class="titular">Resultados de: <%= busqueda %></h2>
+                <% if (locals.busqueda) {%>
+                    <h2 class="titular">Resultados de: <%= busqueda %></h2>
+                <%} else {%>
+                <h2 class="titular">All events</h2>
+                <%}%>
                 <div class="contenedorArticulos">
                             <% Events.forEach( event => { %>
                                 

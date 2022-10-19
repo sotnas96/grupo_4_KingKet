@@ -91,14 +91,6 @@ window.onload = function(){
     })
 
     inputDate.addEventListener('change', ()=>{
-        let fechaActual= new Date();
-        let dia=fechaActual.getDate();
-        let mes=fechaActual.getMonth();
-        let anio=fechaActual.getFullYear();
-        
-        let fechaParaComparar= `${anio}-${mes}-${dia}`	        
-        let fechaAsignada=inputDate.value;
-        //falta hacer la comparacion para que no se pueda cargar una fecha inferior a la actual
         
         if(inputDate.value==""){
             inputDate.style.border = '2px solid red';
