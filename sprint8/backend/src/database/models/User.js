@@ -19,8 +19,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(200),
             allowNull: false
         },
-        avatar_url: DataTypes.STRING(200),
-        user_profile: DataTypes.INTEGER
+        avatar_url: DataTypes.STRING(200)
     };
     let config = {
         timestamps: false
@@ -28,10 +27,6 @@ module.exports = (sequelize, DataTypes) => {
     const User = sequelize.define(alias, cols, config);
     
     User.associate = models => {
-        User.belongsTo(models.Profile, {
-            as: 'Profile',
-            foreignKey: 'user_profile'
-        });
         User.hasMany(models.Cart, {
             as: 'Cart',
             foreignKey: 'user_id'

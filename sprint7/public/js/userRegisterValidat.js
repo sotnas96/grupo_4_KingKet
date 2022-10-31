@@ -8,7 +8,9 @@ window.onload = function(){
     let inputRepass = document.querySelector('#reContra')
     inputRepass.disabled = true;
     let inputAvatar = document.querySelector("#avatar");
+    
     inputAvatar.disabled = true;
+    let inputAdminPass = document.querySelector("#adminPass")
     let form = document.querySelector("form.formulario");
     
     //capturando divs donde se escriben los mensajes de error desde el front

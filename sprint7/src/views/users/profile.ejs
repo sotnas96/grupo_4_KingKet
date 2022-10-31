@@ -6,9 +6,14 @@
     <main>
         <section class="profileBox">
             <div class="avatarBox">
-                <img src="/images/users/<%= locals.userLogged.avatar_url%>" alt="" class="profilePic">
+                <img src="/images/users/<%=locals.userLogged ? locals.userLogged.avatar_url : null%>" alt="" class="profilePic">
                 <h3 class="profileh3"><%= locals.userLogged.user_name%></h3>
                 <p class="profileh3"><%= locals.userLogged.email%></p>
+                <a href="/users/edit"class="linkProfile">
+                    <button class="logoutButton">
+                        Editar perfil
+                    </button>
+                </a>
                 <a href="logout" class="linkProfile">
                     <button class="logoutButton">
                         <i class="fas fa-sign-out-alt"></i> Cerrar sesion
@@ -16,45 +21,10 @@
                 </a>
             </div>
             
-            <div class="profileData">
-                <button class="profileButton">
-                    <a href="">
-                        Privacidad
-                    </a>
-                </button>
-                <button class="profileButton">
-                    <a href="">
-                        Tus tarjetas
-                    </a>
-                </button>
-                <button class="profileButton">
-                    <a href="">
-                        Historial
-                    </a>
-                </button>
-                <button class="profileButton">
-                    <a href="/users/edit">
-                        Editar perfil
-                    </a>
-                </button>
-                <!-- <div class="dataBox">
-                    <ul class="profileList">
-                        <a href="">
-                            <li>Privacidad</li>
-                        </a>
-                        <a href="">
-                            <li>Formas de pago</li>
-                        </a>
-                        <a href="">
-                            <li>Historial</li>
-                        </a>
-                        <a href="">
-                            <li>Editar perfil</li>
-                        </a>
-                    </ul>
-                </div> -->
                 
-            </div>
+                    
+                
+                
         </section>
     </main>
     <%- include('../partials/footer')%>

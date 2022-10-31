@@ -2,7 +2,7 @@ const db = require("../../database/models");
 
 const userApiController = {
     list: (req,res) => {
-        db.User.findAll({include: [{association: 'Profile'}]})
+        db.User.findAll()
             .then(users => {
                 let response = {
                     count: users.length,
@@ -11,8 +11,6 @@ const userApiController = {
                             id: user.id,
                             userName: user.user_name,
                             email: user.email,
-                            profile: user.Profile.user_profile,
-                            image: `http://localhost:3000/images/users/${user.avatar_url}`,
                             url: `http://localhost:3000/api/users/${user.id}`
                         }
                     })
@@ -23,13 +21,12 @@ const userApiController = {
 
     },
     detailId: (req,res) => { 
-        db.User.findByPk(req.params.id,{include: [{association: 'Profile'}]})
+        db.User.findByPk(req.params.id)
             .then(user => {
                 let usuario = {
                     id: user.id,
                     userName: user.user_name,
                     email: user.email,
-                    profile: user.Profile.user_profile,
                     imagen: `http://localhost:3000/images/users/${user.avatar_url}`
                 }
                 res.json(usuario)

@@ -89,7 +89,8 @@ const usersController = {
                     user_name: req.body.userName,
                     email: req.body.email,
                     user_password: bcrypt.hashSync(req.body.password, 10),
-                    avatar_url: req.file.filename
+                    avatar_url: req.file.filename,
+                    user_profile: req.body.profile
     
                 })
                 .then(() => res.redirect('/users/login'))

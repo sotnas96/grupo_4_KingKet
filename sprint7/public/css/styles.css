@@ -210,7 +210,7 @@ a.linkRegister{
     color: #F8D12F;
 }
 
-input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent,#organizador,#location,#date, #avatar{
+input#nombreUser,#contrasena,#userName,#email,#contra,#reContra,#competencia,#oponentes,#precioEvento,#imageEvent,#organizador,#location,#date, #avatar, #adminPass{
     border-radius: 3px;
     border: none;
     padding: 3px;
@@ -478,6 +478,7 @@ section.profileBox{
     display: flex;
     margin: 0px;
     position: relative;
+    justify-content: center;
 }
 img.profilePic{
     width: 50%;
@@ -498,11 +499,12 @@ ul.profileList a li{
 }
 div.avatarBox{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     color: black;
     width: 50%;
     flex-direction: column;
     font-size: 15px;
+    align-items: center;
 }
 p.profileh3{
     font-size: 12;
@@ -602,7 +604,6 @@ div.profileData button a{
     .articuloDetail{
         display: flex;
         margin: 10px auto;
-        width: 80%;
     }
     .articuloCarrito{
         display: flex;
@@ -677,6 +678,7 @@ div.profileData button a{
         display: flex;
         text-decoration: none;
         color: rgb(255, 255, 255);
+        outline: none;
     }
     a.link:hover{
         color:#F8D12F;
@@ -721,6 +723,7 @@ div.profileData button a{
     section.mainCheckout{
         display: flex;
         margin: 0px;
+        justify-content: center;
     }
     .articulosCheckout{
         width: 70%;
@@ -751,5 +754,7 @@ div.profileData button a{
         width: 70%;
         margin-bottom: 20px;
     }  
-
+    img.headerAvatar{
+        width: 100%;
+    }
 

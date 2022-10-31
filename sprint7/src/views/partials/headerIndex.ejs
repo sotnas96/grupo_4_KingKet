@@ -1,6 +1,6 @@
 <header>
-    <div class="mainHeaderIndex">
-        <a href="/">
+    <div class="mainHeaderIndex" >
+        <a href="/" >
             <img src="/images/kingketLogo.png" class="logo">
         </a>
 
@@ -26,11 +26,17 @@
             <i class="fas fa-ticket-alt ticketIcon"></i>
             <p class="nav"> Tickets</p>
         </a>
-            <a href="/products/createProducts" class="link">
+            <!-- <a href="/products/createProducts" class="link">
                 <p>Crea tu evento</p>
-            </a>
+            </a> -->
             <a href="/users/profile" class="link">
-                <p><%= locals.userLogged.user_name%></p>
+                <p>
+                    <div>
+                        
+                        <img src="/images/users/<%=locals.userLogged.avatar_url%>" alt="" class="headerAvatar">
+                    </div>
+                    <%= locals.userLogged.user_name%>
+                </p>
             </a>
         <%} else{ %>
 

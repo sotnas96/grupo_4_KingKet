@@ -1,6 +1,19 @@
 CREATE DATABASE IF NOT EXISTS `kingket`;
 use `kingket`;
+DROP TABLE IF EXISTS `users_profile`;
+CREATE TABLE users_profile
+	(
+	id INT AUTO_INCREMENT UNIQUE,
+    user_profile VARCHAR(20) NOT NULL
+    );
+LOCK TABLES `users_profile` WRITE;
+INSERT INTO `users_profile` (`user_profile`) 
+VALUES 
+('customer'),
+('admin');
+UNLOCK TABLES;
 DROP TABLE IF EXISTS `users`;
+
 CREATE TABLE users
 	(
 	id INT AUTO_INCREMENT UNIQUE,
@@ -8,16 +21,22 @@ CREATE TABLE users
     email VARCHAR(100) NOT NULL,
     user_password VARCHAR(200) NOT NULL,
     avatar_url VARCHAR(200),
-    PRIMARY KEY(id)
+    user_profile INT ,
+    PRIMARY KEY(id),
+    FOREIGN KEY(user_profile) REFERENCES users_profile(id)
     );
 LOCK TABLES `users` WRITE;
-INSERT INTO `users` (`user_name`, `email`, `user_password`, avatar_url) 
+INSERT INTO `users` (`user_name`, `email`, `user_password`, avatar_url, user_profile) 
 VALUES 
-('santos','santosgonzalezpalau@gmail.com','$2a$10$xwRNZArWJ8.iLcuWocVcgODwyfzsG1EVJvilYNdiKzD5IGIfavC/m','avatar-1664902837282.jpg'),
-('alejandro','alejandro@gmail.com','$2a$10$YOIbEttVk2tuEErliN94b.p5.M/IxkPGPKjlYhbUWZKU4usZ2sebq','avatar-1664914301935.jpg'),
-('angel','angelangulo@gmail.com','$2a$10$gDj9RMqnXvFGEryjkREmlOlANvFNrXrFIsfBOiUjEuzG19nNkYIAm','avatar-1664917014289.jpg'),
-('javier', 'javierzamorano@gmail.com', '$2a$10$no7rv4z4l8eZYt.puJh.FeQP/uYj.1BQYQttxg6LjmQWq4VvfPyOa', 'avatar-1664917067227.jpg');
+('santos','santosgonzalezpalau@gmail.com','$2a$10$xwRNZArWJ8.iLcuWocVcgODwyfzsG1EVJvilYNdiKzD5IGIfavC/m','avatar-1664902837282.jpg', 2),
+('alejandro','alejandro@gmail.com','$2a$10$YOIbEttVk2tuEErliN94b.p5.M/IxkPGPKjlYhbUWZKU4usZ2sebq','avatar-1664914301935.jpg', 1),
+('angel','angelangulo@gmail.com','$2a$10$gDj9RMqnXvFGEryjkREmlOlANvFNrXrFIsfBOiUjEuzG19nNkYIAm','avatar-1664917014289.jpg', 1),
+('javier', 'javierzamorano@gmail.com', '$2a$10$no7rv4z4l8eZYt.puJh.FeQP/uYj.1BQYQttxg6LjmQWq4VvfPyOa', 'avatar-1664917067227.jpg', 1 ),
+('Tomivega2', 'tomivega2@hotmail.com', '$2a$10$aDYNyoM9jV.7wkoV5m60wuGWNRG30flnhDDeHciXRArjEKaDACwVW', 'avatar-1665955874301.jpg', 1),
+('tomi', 'santosgonzasslezpalau@gmail.com', '$2a$10$wMwCmtdipo3Ls5Yu9z2fG.W14yS.WHzAeSMFsGmq8xywMJoxnB5k2', 'avatar-1665961890473.jpg',1),
+('santos', 'santosgonzalezpalau@hotmail.com', '$2a$10$5AXhJ2Y3uKdA1YLtUhIXOeq.b3bomuHS./F.UO2eY.OKD0kAnf3yy', 'avatar-1666186808951.jpg',1);
 UNLOCK TABLES;
+
 
     
     
