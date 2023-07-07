@@ -9,7 +9,7 @@ Es un proyecto orientado a todas las edades, para disfrutar en familia y amigos.
 <h4>Santos Gonzalez Palau</h4> 
 <div>
 <img src='images-integrantes\perfil-santos.jpg' width=50% text-align= center>
-<p>26 anos, nacido en Argentina,; viviendo actualmente en Florida y estudiante de Ingenieria Ambiental. Amante del deporte y de los grandes     eventos.</p>
+<p>26 anos, nacido en Argentina,; y estudiante de Ingenieria . Amante del deporte y de los grandes     eventos.</p>
 </div>
 
 <h4>Angel Angulo </h4>
